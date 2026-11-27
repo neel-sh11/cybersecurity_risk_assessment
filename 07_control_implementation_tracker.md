@@ -244,6 +244,35 @@ All controls currently remain at **Proposed — Not Verified** because no implem
 ---
 
 ### 3.3 Technological Controls — Annex A.8
+A.8.14 — Redundancy of Information Processing Facilities
+
+Related Risks: R07 — Hardware Failure and Data Loss
+
+Objective: Ensure the availability of information processing facilities through appropriate redundancy measures.
+
+Proposed Implementation Activities:
+
+* Identify critical systems and infrastructure components.
+* Evaluate single points of failure.
+* Establish redundancy requirements for critical services.
+* Consider redundant storage, network or processing components where appropriate.
+* Test failover and recovery arrangements periodically.
+
+Proposed Owner: IT Administrator / Infrastructure Manager
+
+Priority: High
+
+Evidence Required:
+
+* Infrastructure redundancy documentation.
+* System architecture or infrastructure diagrams.
+* Failover test reports.
+* Availability and recovery records.
+* Maintenance and review records.
+
+Current Status: Proposed — Not Verified
+
+⸻
 
 #### A.8.2 — Privileged Access Rights
 
@@ -624,22 +653,18 @@ All controls currently remain at **Proposed — Not Verified** because no implem
 
 **Current Status:** Proposed — Not Verified
 
----
-
-## 4. Implementation Summary
-
-The following table summarises the selected control distribution.
+---## 4. Implementation Summary
 
 | Control Category | Selected Controls |
 |---|---:|
 | Organisational Controls — A.5 | 6 |
 | People Controls — A.6 | 1 |
-| Technological Controls — A.8 | 14 |
-| **Total Selected Controls** | **21** |
+| Technological Controls — A.8 | 15 |
+| **Total Selected Controls** | **22** |
 
-The selected controls address the principal risks identified in the risk assessment and are intended to support the organisation's proposed risk treatment activities.
+All 22 controls remain at Proposed — Not Verified.
 
----
+No control implementation or effectiveness evidence has been supplied for this simulated assessment.
 
 ## 5. Implementation and Verification Requirements
 
@@ -683,18 +708,17 @@ Sensitive evidence must be protected against unauthorised disclosure.
 
 This tracker should be reviewed alongside the following project documents:
 
+- **01 — Organisation Profile:** Defines organisational context and assessment scope.
 - **02 — Asset Inventory:** Identifies information assets requiring protection.
-- **03 — Risk Assessment:** Identifies and evaluates information security risks.
-- **04 — Risk Treatment Plan:** Defines proposed treatment actions for identified risks.
-- **05 — Risk Treatment Plan Details:** Provides detailed treatment activities and control mappings.
-- **06 — Statement of Applicability:** Records the selected controls and their applicability.
-- **08 — Risk Register:** Maintains the identified risks and their treatment status.
-- **09 — Executive Summary:** Communicates the assessment outcomes.
+- **03 — Threat and Vulnerability Assessment:** Identifies potential threats and vulnerabilities.
+- **04 — Risk Assessment:** Evaluates and prioritises identified cybersecurity risks.
+- **05 — Risk Treatment Plan:** Defines proposed treatment actions and relevant security controls.
+- **06 — Statement of Applicability:** Records selected Annex A controls and their applicability.
+- **08 — Residual Risk Assessment:** Defines the process for evaluating remaining risks after treatment.
+- **09 — Executive Summary:** Communicates consolidated assessment findings.
 - **10 — Methodology and References:** Explains the assessment approach and supporting references.
 
-The control IDs, names, and risk mappings in this tracker should remain consistent with the Statement of Applicability and Risk Treatment Plan.
-
----
+Control IDs, names, applicability decisions and risk mappings should remain consistent across the relevant documents.
 
 ## 8. Limitations
 
