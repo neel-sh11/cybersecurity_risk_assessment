@@ -151,39 +151,42 @@ The proposed treatments are documented in the Risk Treatment Plan.
 
 No proposed treatment should be interpreted as proof of actual control implementation.
 
-7. Statement of Applicability
+## 7. Statement of Applicability
 
-The preliminary Statement of Applicability identifies 21 selected ISO/IEC 27001:2022 Annex A controls.
+The preliminary Statement of Applicability identifies 22 selected ISO/IEC 27001:2022 Annex A controls.
 
 The selected controls are distributed as follows:
 
-Control Category	Selected Controls
-Organisational (A.5)	5
-People (A.6)	1
-Physical (A.7)	Not Assessed
-Technological (A.8)	15
-Total Selected	21
+| Control Category | Selected Controls |
+|---|---:|
+| Organisational (A.5) | 6 |
+| People (A.6) | 1 |
+| Physical (A.7) | Not Assessed |
+| Technological (A.8) | 15 |
+| **Total Selected** | **22** |
 
-The selected controls address the cybersecurity risks identified during the assessment.
+The preliminary SoA is a risk-based selection and not a complete assessment of all 93 Annex A controls.
 
-The preliminary SoA is not a complete assessment of all 93 Annex A controls. Additional applicability and exclusion assessments are required.
+Physical controls have not been assessed in this case study. Additional applicability and exclusion assessments would be required for a complete SoA.
 
-8. Control Implementation Status
+## 8. Control Implementation Status
 
-A preliminary implementation tracker has been developed for the 21 selected controls.
+A preliminary implementation tracker has been developed for the 22 selected controls.
 
-The initial project baseline is:
+Current Implementation Baseline:
 
-Implementation Status	Controls
-Not Started	21
-In Progress	0
-Implemented	0
-Under Review	0
-Verified	0
+| Implementation Status | Controls |
+|---|---:|
+| Proposed — Not Verified | 22 |
+| In Progress | 0 |
+| Implemented — Pending Verification | 0 |
+| Partially Implemented | 0 |
+| Verified | 0 |
+| **Total** | **22** |
 
-Initial Implementation Progress: 0%
+**Initial Implementation Progress: 0%**
 
-The tracker defines proposed responsibilities, implementation priorities, timelines and evidence requirements.
+The tracker defines proposed responsibilities, implementation priorities, activities and evidence requirements.
 
 These are planning assumptions for the simulated case study, not verified organisational activities.
 
