@@ -160,6 +160,8 @@ Relevant ISO/IEC 27001:2022 Controls:
 * A.5.15 — Access control.
 * A.8.9 — Configuration management.
 * A.8.24 — Use of cryptography.
+* A.8.5 — Secure authentication.
+
 
 Responsible Department: IT Department
 
@@ -180,9 +182,14 @@ Risk Treatment Actions:
 
 Relevant ISO/IEC 27001:2022 Controls:
 
-* A.8.8 — Management of technical vulnerabilities.
-* A.8.9 — Configuration management.
-* A.8.19 — Installation of software on operational systems.
+
+Relevant ISO/IEC 27001:2022 Controls:
+
+* A.6.3 — Information security awareness, education and training.
+* A.5.17 — Authentication information.
+* A.8.5 — Secure authentication.
+* A.8.7 — Protection against malware.
+* A.8.23 — Web filtering.
 
 Responsible Department: IT Department
 
