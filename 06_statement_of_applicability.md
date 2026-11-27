@@ -1,319 +1,288 @@
+06 — Statement of Applicability (SoA)
 
-# 06 — Statement of Applicability (SoA)
+Organisation: Nexora Solutions Pvt. Ltd.
+Framework: ISO/IEC 27001:2022
+Reference: Annex A
+Document Type: Preliminary Statement of Applicability
+Document Status: Draft — Proposed Control Selection
+Assessment Type: Simulated Cybersecurity Risk Assessment
 
-**Organisation:** Nexora Solutions Pvt. Ltd.  
-**Framework:** ISO/IEC 27001:2022  
-**Document Type:** Statement of Applicability  
-**Assessment Scope:** Preliminary Risk-Based Control Selection  
-**Selected Controls:** 21  
-**Status:** Draft
+⸻
 
----
+1. Objective
 
-## 1. Purpose
+The purpose of this Statement of Applicability (SoA) is to identify information security controls considered relevant to Nexora Solutions, document their applicability, provide justification and record their current implementation status.
 
-The Statement of Applicability (SoA) identifies the information security controls selected to address the risks associated with Nexora Solutions.
+This document connects the organisation’s identified cybersecurity risks with selected ISO/IEC 27001:2022 Annex A controls.
 
-It establishes a connection between the cybersecurity risk assessment, risk treatment plan and the ISO/IEC 27001:2022 Annex A control framework.
+This is a preliminary, risk-based control selection. It is not a complete assessment of all 93 Annex A controls and does not demonstrate ISO certification or compliance.
 
-This document records:
+2. ISO/IEC 27001:2022 Annex A Structure
 
-- Selected applicable controls.
-- Reasons for selecting each control.
-- Related risk references.
-- Intended security objectives.
-- Current implementation status.
+Annex A contains 93 reference controls divided into four categories:
 
-The SoA serves as a reference for control implementation and future security reviews.
+* A.5 — Organisational Controls: 37 controls.
+* A.6 — People Controls: 8 controls.
+* A.7 — Physical Controls: 14 controls.
+* A.8 — Technological Controls: 34 controls.
 
-## 2. ISO/IEC 27001:2022 Annex A Structure
+Total: 93 controls.
 
-ISO/IEC 27001:2022 Annex A contains 93 reference controls divided into four categories.
+3. Applicability Assessment Criteria
 
-- A.5 — Organisational Controls: 37 controls.
-- A.6 — People Controls: 8 controls.
-- A.7 — Physical Controls: 14 controls.
-- A.8 — Technological Controls: 34 controls.
+Controls are selected based on:
 
-The present assessment selects 21 controls based on identified organisational risks and security requirements.
+1. Identified information security risks.
+2. Organisational assets and business activities.
+3. Legal, regulatory and contractual requirements.
+4. Information security objectives.
+5. Risk treatment decisions.
+6. The organisation’s operating environment and security requirements.
 
-This is a risk-based preliminary selection, not a complete assessment of all 93 controls.
+A control is considered applicable when it supports the treatment of an identified risk or addresses a relevant information security requirement.
 
-## 3. Control Selection Criteria
+Controls not selected in this preliminary register must not automatically be interpreted as formally excluded or not applicable. A complete SoA requires an assessment and documented justification for all relevant Annex A controls.
 
-Controls were selected by considering:
+4. Statement of Applicability Register
 
-1. Identified cybersecurity risks.
-2. Potential impact on organisational information assets.
-3. Likelihood of security incidents.
-4. Business continuity requirements.
-5. Access management and data protection requirements.
-6. Applicable security objectives.
-7. Risk treatment priorities.
+The following 22 controls are selected for this preliminary assessment.
 
-The selected controls are intended to reduce the likelihood or impact of identified security incidents.
+All selected controls currently have the status Proposed — Not Verified. No implementation evidence has been supplied for this simulated organisation.
 
----
+4.1 Organisational Controls — A.5
 
-## 4. Selected Annex A Controls
+A.5.15 — Access Control
 
-### 4.1 Organisational Controls — A.5
+* Applicable: Yes
+* Related Risk: R03 — Insider Data Misuse; R04 — Cloud Data Exposure
+* Purpose: Establish rules to control access to information and associated assets.
+* Status: Proposed — Not Verified
+* Justification: Access to sensitive client information and cloud resources must be restricted according to authorised responsibilities.
 
-#### A.5.15 — Access Control
+A.5.17 — Authentication Information
 
-- Applicability: Applicable
-- Related Risks: R03, R04
-- Objective: Establish rules for controlling access to information and associated assets.
-- Justification: Organisational and client information must only be accessible to authorised individuals.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risks: R01 — Phishing and Account Compromise; R04 — Cloud Data Exposure
+* Purpose: Protect authentication information throughout its lifecycle.
+* Status: Proposed — Not Verified
+* Justification: Secure handling of passwords, credentials and authentication information helps reduce unauthorised account access.
 
-#### A.5.17 — Authentication Information
+A.5.18 — Access Rights
 
-- Applicability: Applicable
-- Related Risk: R01
-- Objective: Protect authentication information throughout its lifecycle.
-- Justification: Authentication credentials must be protected against theft, disclosure and unauthorised use.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risk: R03 — Insider Data Misuse
+* Purpose: Provision, review, modify and remove access rights according to organisational requirements.
+* Status: Proposed — Not Verified
+* Justification: Periodic access reviews and appropriate permission management help prevent excessive or inappropriate access.
 
-#### A.5.18 — Access Rights
+A.5.23 — Information Security for Use of Cloud Services
 
-- Applicability: Applicable
-- Related Risk: R03
-- Objective: Provision, review, modify and remove access rights according to organisational requirements.
-- Justification: Regular access reviews help prevent excessive privileges and unauthorised access.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risk: R04 — Cloud Data Exposure
+* Purpose: Establish processes for acquiring, using, managing and exiting cloud services securely.
+* Status: Proposed — Not Verified
+* Justification: The organisation relies on cloud-based storage and services that require appropriate security oversight and configuration management.
 
-#### A.5.23 — Information Security for Use of Cloud Services
+A.5.24 — Information Security Incident Management Planning and Preparation
 
-- Applicability: Applicable
-- Related Risk: R04
-- Objective: Establish processes for acquiring, using, managing and exiting cloud services securely.
-- Justification: Cloud-based infrastructure and storage require appropriate security management.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risks: R01, R02, R03, R04, R05, R06 and R07
+* Purpose: Establish the organisation’s capability to prepare for and respond to information security incidents.
+* Status: Proposed — Not Verified
+* Justification: A documented incident response approach is required to support consistent reporting, escalation, response and recovery across the identified risk scenarios.
 
-#### A.5.24 — Information Security Incident Management Planning and Preparation
+A.5.30 — ICT Readiness for Business Continuity
 
-- Applicability: Applicable
-- Related Risks: R01, R02
-- Objective: Plan and prepare for the management of information security incidents.
-- Justification: Phishing, malware and ransomware incidents require coordinated response procedures.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risks: R02 — Ransomware Infection; R07 — Hardware Failure and Data Loss
+* Purpose: Ensure ICT readiness supports business continuity objectives.
+* Status: Proposed — Not Verified
+* Justification: Critical business operations depend on the availability and recovery of information systems and supporting infrastructure.
 
-#### A.5.30 — ICT Readiness for Business Continuity
+4.2 People Controls — A.6
 
-- Applicability: Applicable
-- Related Risk: R07
-- Objective: Ensure ICT readiness supports business continuity requirements.
-- Justification: Critical business operations depend on the availability and recovery of IT systems.
-- Implementation Status: Proposed — Not Verified
+A.6.3 — Information Security Awareness, Education and Training
 
-### 4.2 People Controls — A.6
+* Applicable: Yes
+* Related Risks: R01 — Phishing and Account Compromise; R02 — Ransomware Infection; R03 — Insider Data Misuse
+* Purpose: Provide personnel with relevant information security awareness and training.
+* Status: Proposed — Not Verified
+* Justification: Employees need to understand phishing, credential protection, safe information handling and their security responsibilities.
 
-#### A.6.3 — Information Security Awareness, Education and Training
+4.3 Physical Controls — A.7
 
-- Applicability: Applicable
-- Related Risk: R01
-- Objective: Provide employees with appropriate information security awareness and training.
-- Justification: Employee awareness helps reduce phishing susceptibility and credential-related security incidents.
-- Implementation Status: Proposed — Not Verified
+Physical security controls have not been assessed in this preliminary register.
 
-### 4.3 Physical Controls — A.7
+Status: Not Assessed.
 
-Physical controls have not been individually assessed within this preliminary risk-based selection.
+This is a limitation of the current educational case study. It does not mean that physical controls are excluded or not applicable. A complete organisational SoA would need to evaluate relevant physical security requirements.
 
-- Applicability: Not Assessed
-- Related Risks: Requires further assessment
-- Justification: Physical security requirements must be evaluated against organisational facilities, equipment and operational arrangements.
+4.4 Technological Controls — A.8
 
-This category is not declared unnecessary or excluded from a complete ISO/IEC 27001 assessment.
+A.8.2 — Privileged Access Rights
 
-### 4.4 Technological Controls — A.8
+* Applicable: Yes
+* Related Risk: R03 — Insider Data Misuse
+* Purpose: Restrict and manage privileged access rights.
+* Status: Proposed — Not Verified
+* Justification: Privileged accounts require stronger access restrictions and appropriate oversight to reduce misuse.
 
-#### A.8.2 — Privileged Access Rights
+A.8.3 — Information Access Restriction
 
-- Applicability: Applicable
-- Related Risk: R03
-- Objective: Restrict and manage privileged access rights.
-- Justification: Administrative accounts require stronger access restrictions and monitoring.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risks: R03 — Insider Data Misuse; R04 — Cloud Data Exposure
+* Purpose: Restrict access to information according to established access control requirements.
+* Status: Proposed — Not Verified
+* Justification: Sensitive client and business information should only be accessible to authorised users with a legitimate business requirement.
 
-#### A.8.3 — Information Access Restriction
+A.8.5 — Secure Authentication
 
-- Applicability: Applicable
-- Related Risk: R03
-- Objective: Restrict access to information according to established access control requirements.
-- Justification: Sensitive organisational information must only be accessible to authorised users.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risks: R01 — Phishing and Account Compromise; R04 — Cloud Data Exposure
+* Purpose: Implement secure authentication technologies and procedures.
+* Status: Proposed — Not Verified
+* Justification: Strong authentication measures, including multi-factor authentication where appropriate, help reduce the risk of unauthorised account access.
 
-#### A.8.5 — Secure Authentication
+A.8.6 — Capacity Management
 
-- Applicability: Applicable
-- Related Risks: R01, R04
-- Objective: Implement secure authentication technologies and procedures.
-- Justification: Multi-Factor Authentication (MFA) and secure authentication mechanisms help reduce unauthorised account access.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risk: R06 — DDoS Service Disruption
+* Purpose: Monitor and manage the capacity of information processing facilities.
+* Status: Proposed — Not Verified
+* Justification: Capacity monitoring and planning support service availability and help identify resource constraints during abnormal traffic conditions.
 
-#### A.8.6 — Capacity Management
+A.8.7 — Protection Against Malware
 
-- Applicability: Applicable
-- Related Risk: R06
-- Objective: Monitor and adjust resource capacity to meet current and expected requirements.
-- Justification: Capacity planning helps maintain service availability and manage resource exhaustion.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risks: R01 — Phishing and Account Compromise; R02 — Ransomware Infection
+* Purpose: Protect information and systems against malware.
+* Status: Proposed — Not Verified
+* Justification: Malicious attachments, downloads and ransomware may compromise organisational devices and information.
 
-#### A.8.7 — Protection Against Malware
+A.8.8 — Management of Technical Vulnerabilities
 
-- Applicability: Applicable
-- Related Risks: R01, R02
-- Objective: Implement protection against malware.
-- Justification: Malware and ransomware may compromise organisational systems and information.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risks: R02 — Ransomware Infection; R05 — Exploitation of Unpatched Software
+* Purpose: Identify, evaluate and address technical vulnerabilities.
+* Status: Proposed — Not Verified
+* Justification: Timely vulnerability identification and remediation help reduce exposure to known software weaknesses.
 
-#### A.8.8 — Management of Technical Vulnerabilities
+A.8.9 — Configuration Management
 
-- Applicability: Applicable
-- Related Risk: R05
-- Objective: Identify, evaluate and address technical vulnerabilities.
-- Justification: Timely vulnerability management reduces exposure to known software weaknesses.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risks: R04 — Cloud Data Exposure; R05 — Exploitation of Unpatched Software
+* Purpose: Establish and monitor secure configurations for systems and services.
+* Status: Proposed — Not Verified
+* Justification: Secure and controlled configurations help reduce cloud misconfiguration and weaknesses in system settings.
 
-#### A.8.9 — Configuration Management
+A.8.13 — Information Backup
 
-- Applicability: Applicable
-- Related Risks: R04, R05
-- Objective: Establish and monitor secure configurations for systems and services.
-- Justification: Secure configurations help prevent infrastructure and cloud misconfigurations.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risks: R02 — Ransomware Infection; R07 — Hardware Failure and Data Loss
+* Purpose: Maintain and protect backup copies of information.
+* Status: Proposed — Not Verified
+* Justification: Secure backups and tested restoration procedures support data recovery following ransomware incidents or hardware failure.
 
-#### A.8.13 — Information Backup
+A.8.14 — Redundancy of Information Processing Facilities
 
-- Applicability: Applicable
-- Related Risks: R02, R07
-- Objective: Maintain backup copies of information, software and systems.
-- Justification: Reliable backups support recovery from ransomware incidents and hardware failures.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risk: R07 — Hardware Failure and Data Loss
+* Purpose: Implement redundancy to meet availability requirements.
+* Status: Proposed — Not Verified
+* Justification: Redundant information processing capabilities can reduce service disruption when critical hardware or infrastructure components fail.
 
-#### A.8.16 — Monitoring Activities
+A.8.16 — Monitoring Activities
 
-- Applicability: Applicable
-- Related Risks: R02, R03, R04
-- Objective: Monitor networks, systems and applications for anomalous behaviour.
-- Justification: Monitoring helps identify suspicious activities and potential security incidents.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risks: R01, R02, R03, R04, R06
+* Purpose: Monitor networks, systems and applications for anomalous behaviour.
+* Status: Proposed — Not Verified
+* Justification: Monitoring activities can help identify suspicious access, malware behaviour, cloud configuration changes and abnormal network traffic.
 
-#### A.8.19 — Installation of Software on Operational Systems
+A.8.19 — Installation of Software on Operational Systems
 
-- Applicability: Applicable
-- Related Risk: R05
-- Objective: Control software installation on operational systems.
-- Justification: Unauthorised or insecure software installations may introduce security vulnerabilities.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risk: R05 — Exploitation of Unpatched Software
+* Purpose: Control software installation on operational systems securely.
+* Status: Proposed — Not Verified
+* Justification: Controlled software installation helps reduce exposure to unauthorised, outdated or insecure software.
 
-#### A.8.20 — Network Security
+A.8.20 — Network Security
 
-- Applicability: Applicable
-- Related Risk: R06
-- Objective: Secure and protect networks and network devices.
-- Justification: Network security measures help protect organisational infrastructure and online services.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risk: R06 — DDoS Service Disruption
+* Purpose: Secure and protect networks and network devices.
+* Status: Proposed — Not Verified
+* Justification: Network security measures help protect the organisation’s public-facing services and supporting infrastructure.
 
-#### A.8.21 — Security of Network Services
+A.8.21 — Security of Network Services
 
-- Applicability: Applicable
-- Related Risk: R06
-- Objective: Identify and implement security mechanisms and service requirements for network services.
-- Justification: Network services require appropriate security and availability protections.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risk: R06 — DDoS Service Disruption
+* Purpose: Identify and implement security mechanisms and requirements for network services.
+* Status: Proposed — Not Verified
+* Justification: Network services require appropriate security and availability protections to support reliable business operations.
 
-#### A.8.23 — Web Filtering
+A.8.23 — Web Filtering
 
-- Applicability: Applicable
-- Related Risk: R01
-- Objective: Manage access to external websites to reduce exposure to malicious content.
-- Justification: Web filtering helps reduce access to known malicious websites.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risk: R01 — Phishing and Account Compromise
+* Purpose: Manage access to external websites to reduce exposure to malicious content.
+* Status: Proposed — Not Verified
+* Justification: Web filtering can help prevent users from accessing known malicious or phishing websites.
 
-#### A.8.24 — Use of Cryptography
+A.8.24 — Use of Cryptography
 
-- Applicability: Applicable
-- Related Risk: R04
-- Objective: Establish rules for the effective use of cryptography and encryption.
-- Justification: Cryptographic protections help safeguard sensitive information against unauthorised disclosure.
-- Implementation Status: Proposed — Not Verified
+* Applicable: Yes
+* Related Risk: R04 — Cloud Data Exposure
+* Purpose: Establish rules for effective use of cryptography and encryption.
+* Status: Proposed — Not Verified
+* Justification: Appropriate cryptographic protections help safeguard sensitive information against unauthorised disclosure.
 
----
+5. SoA Summary
 
-## 5. Control Selection Summary
+Control Category	Selected Controls
+A.5 — Organisational	6
+A.6 — People	1
+A.7 — Physical	Not Assessed
+A.8 — Technological	15
+Total Selected Controls	22
 
-The preliminary assessment selects 21 Annex A controls.
+All 22 selected controls are considered applicable to this preliminary risk-based assessment.
 
-- Organisational Controls (A.5): 6
-- People Controls (A.6): 1
-- Physical Controls (A.7): Not Assessed
-- Technological Controls (A.8): 14
+Their implementation has not been independently verified. Selection and applicability do not demonstrate that a control is implemented or operating effectively.
 
-**Total Selected Controls: 21**
+6. Implementation Status Definitions
 
-The selection prioritises access management, authentication, cloud security, malware protection, vulnerability management, monitoring, network security and business continuity.
+The following status terminology is used throughout this project:
 
-## 6. Implementation Status Definitions
+* Proposed — Not Verified: A control has been selected or recommended, but implementation has not been established through evidence.
+* In Progress: Implementation activities have started, but the control is not yet fully implemented.
+* Implemented — Pending Verification: The control has reportedly been deployed, but its operation and effectiveness have not yet been verified.
+* Partially Implemented: Some control requirements are in place, but gaps remain.
+* Verified: Implementation and operating effectiveness have been assessed and supported by appropriate evidence.
 
-The following status definitions will be used in the control implementation tracker.
+The current status of all selected controls is Proposed — Not Verified.
 
-**Not Started:** Implementation activities have not begun.
+7. Limitations
 
-**In Progress:** Implementation activities are currently underway.
+This document represents a preliminary Statement of Applicability for a fictional organisation.
 
-**Implemented:** The control has been implemented and supporting evidence is available.
+The following limitations apply:
 
-**Partially Implemented:** Some requirements are implemented, but outstanding gaps remain.
+1. The organisation and its operating environment are simulated.
+2. Only 22 selected Annex A controls are documented in this preliminary register.
+3. Physical controls under A.7 have not been assessed.
+4. The remaining Annex A controls have not undergone a complete applicability and exclusion assessment.
+5. No control implementation evidence has been supplied or independently verified.
+6. The document does not represent an official ISO/IEC 27001 certification or compliance audit.
 
-**Not Verified:** Implementation status has not been established through sufficient assessment evidence.
+8. Conclusion
 
-For this preliminary assessment, all 21 selected controls are classified as:
+This preliminary SoA establishes a risk-based selection of 22 ISO/IEC 27001:2022 Annex A controls for Nexora Solutions Pvt. Ltd.
 
-**Proposed — Not Verified**
+The selected controls are mapped to the cybersecurity risks documented in the Risk Assessment and Risk Treatment Plan.
 
-This classification does not imply that the controls are already operational.
+Further assessment is required to complete the applicability review, evaluate physical security requirements, implement the proposed controls and collect evidence of their effectiveness.
 
-## 7. Exclusions and Assessment Limitations
-
-This document represents a preliminary selection of 21 controls from ISO/IEC 27001:2022 Annex A.
-
-The remaining controls have not been individually evaluated in this case study.
-
-Physical security requirements and additional organisational requirements require further assessment.
-
-A complete organisational SoA must evaluate all 93 Annex A controls, document applicability decisions, justify exclusions and establish implementation status.
-
-The current selection may be revised following changes in organisational context, risk assessment results or management requirements.
-
-## 8. Relationship with Other Project Documents
-
-This document is connected to the following project records:
-
-- File 02 — Asset Inventory: Identifies organisational information assets.
-- File 03 — Risk Assessment: Identifies and evaluates cybersecurity risks.
-- File 04 — Risk Evaluation: Establishes risk prioritisation.
-- File 05 — Risk Treatment Plan: Defines proposed risk treatment actions.
-- File 07 — Control Implementation Tracker: Tracks implementation responsibilities, activities and evidence.
-- File 08 — Residual Risk Assessment: Records residual risk evaluation following treatment.
-
-These documents collectively establish traceability between assets, risks, treatment decisions and selected security controls.
-
-## 9. Assessment Conclusion
-
-The preliminary Statement of Applicability establishes a structured relationship between identified cybersecurity risks and 21 selected ISO/IEC 27001:2022 Annex A controls.
-
-The selected controls provide a foundation for security implementation planning, responsibility assignment, evidence collection and future effectiveness reviews.
-
-The next stage is to track the selected controls through the Control Implementation Tracker and evaluate their implementation using appropriate evidence.
-
----
-
-**Project:** Cybersecurity Risk Assessment & ISO 27001 Case Study  
-**Organisation:** Nexora Solutions Pvt. Ltd.  
-**Document:** 06 — Statement of Applicability  
-**Framework:** ISO/IEC 27001:2022  
-**Selected Controls:** 21  
-**Status:** Preliminary Draft
+The SoA should be reviewed and updated as the organisation’s risks, requirements and control implementation status change.
