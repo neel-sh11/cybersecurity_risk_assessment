@@ -1,492 +1,316 @@
 10 — Methodology and References
 
 Organisation: Nexora Solutions Pvt. Ltd.
-Project: Cybersecurity Risk Assessment & ISO 27001 Case Study
-Document Type: Methodology and References
-Version: 2.0
-Status: Revised Assessment Methodology
+Assessment: Cybersecurity Risk Assessment and Treatment
+Framework: ISO/IEC 27001:2022
+Assessment Type: Simulated GRC Case Study
+Document Status: Final Methodology Documentation
 
 ⸻
 
-1. Purpose
+1. Introduction
 
-This document describes the methodology, assessment principles, risk evaluation approach and reference materials used throughout the Cybersecurity GRC Risk Assessment Project.
+This document explains the methodology, assessment approach, risk evaluation criteria and reference materials used throughout the Nexora Solutions cybersecurity risk assessment project.
 
-The purpose is to maintain consistency, transparency and traceability across all project documents.
+The project demonstrates a structured approach to identifying information security risks, evaluating their potential impact, selecting appropriate security controls and planning risk treatment activities.
 
-The assessment uses ISO/IEC 27001:2022 as its primary reference framework, supported by relevant information security risk management and cybersecurity guidance.
+The assessment is based on a fictional organisation and is intended for educational and portfolio demonstration purposes.
 
-2. Assessment Approach
+It does not represent an official ISO/IEC 27001 certification audit or an assessment of a real organisation.
 
-The project follows a structured risk-based information security assessment process.
+2. Assessment Objectives
 
-The methodology connects the following activities:
+The primary objectives are to:
 
-1. Organisational context identification.
-2. Information asset identification.
-3. Threat and vulnerability identification.
-4. Risk analysis and evaluation.
-5. Risk treatment planning.
-6. Security control applicability assessment.
-7. Control implementation tracking.
-8. Residual risk evaluation.
-9. Documentation and management review.
+* Establish a simulated organisational information security context.
+* Identify important information assets.
+* Identify relevant threats and vulnerabilities.
+* Evaluate cybersecurity risks using a consistent risk rating methodology.
+* Recommend appropriate risk treatment measures.
+* Map selected security controls to ISO/IEC 27001:2022 Annex A.
+* Establish a preliminary Statement of Applicability.
+* Define proposed control implementation activities.
+* Evaluate residual risk requirements.
+* Communicate findings through an executive summary.
 
-Each stage provides information required for the subsequent assessment activities.
+3. Assessment Scope
 
-3. Assessment Methodology
+The assessment covers the simulated information security environment of Nexora Solutions Pvt. Ltd.
 
-Step 1 — Define the Organisational Context
+The scope includes:
 
-Establish the fictional organisation’s business environment, operational activities, information security requirements and assessment boundaries.
+* Organisational information assets.
+* Information systems and supporting technology.
+* User access and authentication.
+* Cloud-based services and information storage.
+* Network and service availability.
+* Software vulnerabilities and malware exposure.
+* Data protection and recovery requirements.
+* Information security incident management.
 
-The organisational profile provides the context for identifying relevant information assets and potential security risks.
+The assessment focuses on seven identified cybersecurity risks.
 
-Reference Document: 01 — Organisation Profile.
+Physical security controls under ISO/IEC 27001:2022 Annex A.7 have not been assessed in this preliminary exercise.
 
-Step 2 — Identify and Classify Information Assets
+The selected Annex A controls represent a preliminary risk-based selection and not a complete applicability assessment of all 93 controls.
 
-Identify organisational assets that support business operations and information processing.
+4. Assessment Methodology
+
+The assessment follows a structured risk management process.
+
+4.1 Organisational Context
+
+The organisation profile establishes the simulated business environment, its activities, information assets and security requirements.
+
+This provides the foundation for identifying potential information security risks.
+
+Reference Document: 01_organisation_profile.md
+
+4.2 Asset Identification
+
+Relevant information assets are identified and documented.
+
+Assets are considered according to their business importance, information sensitivity and potential consequences of compromise.
 
 Examples include:
 
-* Hardware and computing devices.
-* Software and applications.
-* Business information and databases.
+* Business information and records.
+* Client and employee information.
+* Information systems.
+* Cloud platforms and storage.
 * Network infrastructure.
-* Cloud storage and services.
-* User accounts and credentials.
-* Backup infrastructure.
+* End-user devices.
 
-Assets are documented with their relevant identifiers, descriptions, classifications and ownership information.
+Reference Document: 02_asset_inventory.md
 
-Reference Document: 02 — Asset Inventory.
+4.3 Threat and Vulnerability Assessment
 
-Step 3 — Identify Threats and Vulnerabilities
+Potential threats and vulnerabilities are identified for the organisation’s information assets.
 
-Identify potential threat events and vulnerabilities that could affect organisational assets.
+Threats represent potential causes of security incidents, while vulnerabilities represent weaknesses that could be exploited.
 
-Threats represent potential sources of harm, while vulnerabilities represent weaknesses that could be exploited.
+The assessment considers scenarios such as phishing, ransomware, unauthorised access, cloud exposure, software vulnerabilities, service disruption and hardware failure.
 
-The assessment establishes relationships between relevant threats and vulnerabilities.
+Reference Document: 03_threat_vulnerability_assessment.md
 
-Reference Document: 03 — Threat and Vulnerability Assessment.
+4.4 Risk Identification and Assessment
 
-Step 4 — Analyse and Evaluate Risks
+Identified threats and vulnerabilities are evaluated to determine their potential information security risks.
 
-Evaluate the potential cybersecurity risks associated with identified assets, threats and vulnerabilities.
+The assessment considers:
 
-Each risk is assessed using two primary factors:
+* Likelihood of occurrence.
+* Potential business impact.
+* Confidentiality, integrity and availability consequences.
+* Existing security considerations.
+* Overall risk priority.
 
-Likelihood: The estimated probability of a risk event occurring.
+A consistent scoring approach is used to support risk prioritisation.
 
-Impact: The potential consequences if the risk event occurs.
+Reference Document: 04_risk_assessment.md
 
-The resulting risk score determines the corresponding risk classification and treatment priority.
+4.5 Risk Treatment
 
-Reference Document: 04 — Cybersecurity Risk Assessment.
+Risk treatment options are considered according to the nature and priority of each identified risk.
 
-Step 5 — Determine Risk Treatment
+The treatment approach includes:
 
-Select an appropriate risk treatment strategy for each identified risk.
+* Risk Mitigation: Reducing the likelihood or impact of a risk through security measures.
+* Risk Avoidance: Discontinuing an activity that creates unacceptable risk.
+* Risk Transfer or Sharing: Sharing or transferring certain financial or operational consequences through appropriate arrangements.
+* Risk Acceptance: Formally accepting a risk within approved organisational tolerance.
 
-The assessment considers four general treatment approaches:
+The project primarily focuses on proposed risk mitigation activities.
 
-Risk Modification
+Relevant ISO/IEC 27001:2022 Annex A controls are identified for each risk.
 
-Implementing security measures to reduce the likelihood or impact of a risk. This includes risk mitigation.
+Reference Document: 05_risk_treatment_plan.md
 
-Risk Avoidance
+4.6 Statement of Applicability
 
-Discontinuing an activity or process that creates an unacceptable risk.
+A preliminary Statement of Applicability is developed using a risk-based selection of ISO/IEC 27001:2022 Annex A controls.
 
-Risk Sharing
+The current selection contains:
 
-Sharing certain risk consequences with another party through appropriate contractual arrangements, insurance or other mechanisms.
+Control Category	Selected Controls
+A.5 — Organisational	6
+A.6 — People	1
+A.7 — Physical	Not Assessed
+A.8 — Technological	15
+Total Selected	22
 
-Risk Retention
+The selected controls are documented with applicability decisions, related risks, purpose and current status.
 
-Formally retaining a risk through an authorised and documented management decision.
+The remaining Annex A controls have not undergone a complete applicability and exclusion assessment.
 
-All seven identified risks in this project have been assigned a mitigation strategy.
+Reference Document: 06_statement_of_applicability.md
 
-Reference Document: 05 — Risk Treatment Plan.
+4.7 Control Implementation Planning
 
-Step 6 — Assess Control Applicability
+A control implementation tracker is prepared to define proposed implementation activities.
 
-Review relevant ISO/IEC 27001:2022 Annex A controls and determine their applicability to the identified organisational risks and requirements.
+Each selected control includes relevant information such as:
 
-Document:
+* Control objective.
+* Related risk.
+* Proposed implementation activities.
+* Proposed responsibility.
+* Priority.
+* Evidence requirements.
+* Current implementation status.
 
-* Selected security controls.
-* Applicability decisions.
-* Justification for control selection.
-* Related risk identifiers.
-* Implementation status.
-* Exclusion decisions where applicable.
+All 22 selected controls are currently classified as:
 
-This project selects 21 controls for its preliminary Statement of Applicability.
+Proposed — Not Verified
 
-The remaining Annex A controls have not undergone a complete individual applicability assessment.
+No implementation evidence has been supplied or independently verified.
 
-Reference Document: 06 — Statement of Applicability.
+Reference Document: 07_control_implementation_tracker.md
 
-Step 7 — Track Control Implementation
+4.8 Residual Risk Assessment
 
-Establish a structured process for monitoring proposed security control implementation.
+Residual risk represents the risk remaining after selected treatment measures have been implemented and their effectiveness has been evaluated.
 
-The tracking process records:
+Residual risk should not be assumed to be lower merely because a control has been recommended.
 
-* Control identifiers.
-* Responsible departments.
-* Implementation priorities.
-* Proposed timelines.
-* Implementation status.
-* Required supporting evidence.
-* Verification requirements.
+For this project, residual risk scores remain pending reassessment because the proposed controls have not been implemented and verified.
 
-Control implementation claims must be supported by appropriate evidence.
+Reference Document: 08_residual_risk_assessment.md
 
-Reference Document: 07 — Control Implementation Tracker.
+4.9 Executive Reporting
 
-Step 8 — Evaluate Residual Risk
+The assessment findings are consolidated into an executive summary.
 
-Reassess identified risks after the relevant security controls have been implemented and their effectiveness has been evaluated.
+The summary communicates the overall risk position, selected controls, proposed treatment approach, implementation status and limitations.
 
-The reassessment considers whether the likelihood and/or impact of each risk has changed.
+Reference Document: 09_executive_summary.md
 
-Residual risk ratings must be supported by implementation evidence, control effectiveness testing and appropriate risk owner review.
+5. Risk Scoring Methodology
 
-Reference Document: 08 — Residual Risk Assessment.
+The project uses a qualitative risk assessment supported by a numerical scoring model.
 
-Step 9 — Consolidate Assessment Findings
-
-Summarise the assessment scope, key findings, risk distribution, proposed treatments, selected controls and outstanding assessment limitations.
-
-Reference Document: 09 — Executive Summary.
-
-⸻
-
-4. Risk Scoring Methodology
-
-The project uses a qualitative 5×5 risk assessment matrix.
-
-The risk score is calculated using:
+Risk scores are calculated using:
 
 Risk Score = Likelihood × Impact
 
-Both factors are assigned values between 1 and 5.
+Both likelihood and impact are rated on a five-point scale.
 
-The maximum possible risk score is 25.
+5.1 Likelihood Scale
 
-4.1 Likelihood Scale
+Score	Rating	Description
+1	Rare	Highly unlikely to occur
+2	Unlikely	Could occur, but not expected frequently
+3	Possible	May occur under certain circumstances
+4	Likely	Expected to occur in relevant circumstances
+5	Almost Certain	Expected to occur frequently or repeatedly
 
-1 — Rare
+5.2 Impact Scale
 
-The event is highly unlikely to occur under normal circumstances.
+Score	Rating	Description
+1	Insignificant	Minimal operational or information impact
+2	Minor	Limited disruption or loss
+3	Moderate	Noticeable operational or information impact
+4	Major	Significant business disruption or information compromise
+5	Severe	Critical business, financial, legal or reputational consequences
 
-2 — Unlikely
+5.3 Risk Rating Classification
 
-The event could occur but is not expected in most circumstances.
+The calculated risk score is classified using the following bands:
 
-3 — Possible
-
-The event could reasonably occur during normal business operations.
-
-4 — Likely
-
-The event is expected to occur under certain circumstances.
-
-5 — Almost Certain
-
-The event is highly probable or expected to occur frequently.
-
-4.2 Impact Scale
-
-1 — Insignificant
-
-Minimal disruption with negligible financial or operational consequences.
-
-2 — Minor
-
-Limited operational disruption with relatively small financial consequences.
-
-3 — Moderate
-
-Noticeable business disruption, service interruption or moderate financial consequences.
-
-4 — Major
-
-Serious operational disruption, significant financial loss or exposure of sensitive information.
-
-5 — Severe
-
-Critical business disruption, major financial loss, substantial data compromise or serious reputational damage.
-
-4.3 Risk Classification
-
-Risk Score	Classification
+Risk Score	Rating
 1–4	Low
 5–9	Moderate
 10–16	High
 17–25	Critical
 
-4.4 Risk Evaluation Principles
+These rating bands are the project’s defined assessment criteria. They are not presented as mandatory numerical thresholds prescribed by ISO/IEC 27001.
 
-The same scoring model is used for initial and residual risk assessments.
+6. Risk Treatment and Control Selection Principles
 
-Initial risk scores represent the estimated exposure before considering the effectiveness of security controls.
-
-Residual risk scores represent the remaining exposure after implemented controls have been evaluated.
-
-A proposed control alone does not justify a reduction in risk score.
-
-The likelihood and impact ratings must be reassessed using available evidence and documented assessment judgement.
-
-⸻
-
-5. Risk Treatment and Control Selection Principles
-
-The assessment uses a risk-based approach to selecting security controls.
+The project uses a risk-based approach when selecting security controls.
 
 Control selection considers:
 
-1. The nature of the identified cybersecurity risk.
-2. The affected organisational asset.
-3. The associated threat and vulnerability.
-4. Potential business consequences.
-5. The proposed risk treatment strategy.
-6. Relevant ISO/IEC 27001:2022 Annex A controls.
-7. Organisational requirements and available resources.
+1. The nature of the identified risk.
+2. The assets affected by the risk.
+3. The likelihood and potential impact.
+4. The proposed risk treatment strategy.
+5. The relevance of ISO/IEC 27001:2022 Annex A controls.
+6. The need for appropriate implementation evidence.
 
-A security control may support the treatment of more than one risk.
+A control being selected does not mean that it has been implemented.
 
-Similarly, a single risk may require multiple security controls.
+Control implementation must be supported by evidence, and operating effectiveness must be assessed before a control can be considered verified.
 
-Control applicability does not automatically establish implementation or effectiveness.
+7. Control Implementation Status Definitions
 
-⸻
+The following status definitions are used throughout the project:
 
-6. Statement of Applicability Methodology
+* Proposed — Not Verified: A control has been selected or recommended, but implementation has not been established through evidence.
+* In Progress: Implementation activities have started, but the control is not yet fully implemented.
+* Implemented — Pending Verification: The control has reportedly been deployed, but its operation and effectiveness have not been verified.
+* Partially Implemented: Some requirements are in place, but implementation gaps remain.
+* Verified: Implementation and operating effectiveness have been assessed and supported by appropriate evidence.
 
-ISO/IEC 27001:2022 Annex A contains 93 reference controls across four categories.
+The current baseline for all 22 selected controls is Proposed — Not Verified.
 
-Control Category	Number of Controls
-Organisational (A.5)	37
-People (A.6)	8
-Physical (A.7)	14
-Technological (A.8)	34
-Total	93
+8. Residual Risk Evaluation Principles
 
-The preliminary Statement of Applicability in this project documents 21 selected controls.
+Residual risk evaluation should take place after risk treatment activities have been completed or sufficiently implemented.
 
-The selected controls are:
+The evaluation should consider:
 
-* Organisational Controls: 5.
-* People Controls: 1.
-* Technological Controls: 15.
+* Whether the proposed control has been implemented.
+* Whether sufficient implementation evidence exists.
+* Whether the control operates as intended.
+* Whether the original likelihood has changed.
+* Whether the original impact has changed.
+* Whether additional treatment is required.
+* Whether the remaining risk is within the organisation’s acceptance criteria.
 
-Physical controls have not yet undergone a separate applicability assessment.
+Residual risk scores must be recalculated using the same likelihood and impact methodology applied during the initial assessment.
 
-The remaining reference controls also require further review before a complete SoA can be established.
+No residual risk reduction is assumed in this project.
 
-Control exclusions must be justified according to organisational requirements and the assessment context.
+9. Assumptions and Limitations
 
-The preliminary selection of 21 controls must not be interpreted as a complete ISO/IEC 27001 control applicability assessment.
+This project has the following limitations:
 
-⸻
+1. Nexora Solutions Pvt. Ltd. is a fictional organisation.
+2. The organisational profile and assessment environment are simulated.
+3. The identified assets, threats, vulnerabilities and risk scenarios are illustrative.
+4. Risk scores are based on the project’s defined assessment assumptions.
+5. No production infrastructure or real organisational systems were accessed or tested.
+6. No vulnerability scanning, penetration testing or technical validation was performed as part of this documented assessment.
+7. The 22 selected Annex A controls represent a preliminary selection, not a complete assessment of all 93 controls.
+8. Physical controls under Annex A.7 have not been assessed.
+9. No control implementation evidence has been supplied or independently verified.
+10. Residual risk scores remain pending implementation and effectiveness assessment.
 
-7. Residual Risk Evaluation Principles
+These limitations should be considered when interpreting the assessment findings.
 
-Residual risk evaluation is performed only after proposed controls have been implemented and their effectiveness assessed.
+10. References
 
-The assessment requires:
+The following publications and frameworks provide the reference basis for this project:
 
-* Implementation evidence.
-* Control configuration or deployment records.
-* Testing and verification results.
-* Updated threat and vulnerability information.
-* Revised likelihood and impact assessments.
-* Risk owner review.
-* Management approval where required.
+1. ISO/IEC 27001:2022 — Information security, cybersecurity and privacy protection — Information security management systems — Requirements.
+2. ISO/IEC 27002:2022 — Information security, cybersecurity and privacy protection — Information security controls.
+3. ISO 31000:2018 — Risk management — Guidelines.
+4. NIST Cybersecurity Framework 2.0 — A framework for managing cybersecurity risks.
 
-The risk reduction calculation is:
+Official reference resources:
 
-Risk Reduction = Initial Risk Score − Residual Risk Score
+* ISO: https://www.iso.org/
+* NIST Cybersecurity Framework: https://www.nist.gov/cyberframework
 
-A positive value indicates a reduction in the assessed risk score.
+These references support the general principles and control concepts used in the case study. The project does not claim formal conformity or certification against these standards.
 
-A negative value indicates an increase.
+11. Conclusion
 
-Where implementation evidence is unavailable, residual risk values must remain pending.
+This methodology establishes a consistent approach to the simulated cybersecurity risk assessment of Nexora Solutions Pvt. Ltd.
 
-Risk acceptance must be documented and authorised by the appropriate management authority.
+It connects organisational context, asset identification, threat and vulnerability analysis, risk evaluation, treatment planning, control selection and residual risk assessment.
 
-⸻
+The resulting documentation provides a structured demonstration of foundational Governance, Risk and Compliance (GRC) practices.
 
-8. Information Security Principles
-
-The assessment considers the CIA Triad, a fundamental information security model.
-
-Confidentiality
-
-Ensuring that information is accessible only to authorised individuals and systems.
-
-Examples include access control, authentication and encryption.
-
-Integrity
-
-Ensuring that information remains accurate, complete and protected against unauthorised modification.
-
-Examples include access restrictions, integrity monitoring and controlled change management.
-
-Availability
-
-Ensuring that information and systems remain accessible when required by authorised users.
-
-Examples include backups, redundancy, capacity management and business continuity planning.
-
-These principles help evaluate the potential consequences of cybersecurity risks.
-
-⸻
-
-9. Documentation and Evidence Management
-
-All assessment documents should follow consistent documentation and evidence management practices.
-
-The project follows these principles:
-
-1. Maintain consistent asset and risk identifiers.
-2. Use clear and specific risk descriptions.
-3. Maintain traceability between threats, vulnerabilities and risks.
-4. Document the justification for control applicability.
-5. Distinguish proposed controls from implemented controls.
-6. Maintain evidence supporting implementation claims.
-7. Record risk treatment and acceptance decisions.
-8. Document assessment assumptions and limitations.
-9. Review documentation when significant changes occur.
-10. Protect sensitive information and avoid publishing confidential evidence.
-
-Evidence should be dated, traceable and reviewed by authorised personnel.
-
-⸻
-
-10. Framework and Reference Materials
-
-The following standards and frameworks inform the assessment methodology.
-
-10.1 Primary Framework
-
-ISO/IEC 27001:2022 — Information Security Management Systems
-
-Provides requirements for establishing, implementing, maintaining and continually improving an Information Security Management System (ISMS).
-
-It is the primary framework reference for this project.
-
-Official reference:
-
-https://www.iso.org/standard/27001
-
-10.2 Risk Management Guidance
-
-ISO/IEC 27005:2022 — Guidance on Managing Information Security Risks
-
-Provides guidance for identifying, assessing, treating, communicating and monitoring information security risks.
-
-It supports the risk management approach used throughout the assessment.
-
-Official reference:
-
-https://www.iso.org/standard/80585.html
-
-10.3 Information Security Control Guidance
-
-ISO/IEC 27002:2022 — Information Security Controls
-
-Provides guidance on information security controls and their implementation.
-
-It supports the interpretation and selection of relevant security controls.
-
-Official reference:
-
-https://www.iso.org/standard/75652.html
-
-10.4 Additional Cybersecurity Framework
-
-NIST Cybersecurity Framework 2.0
-
-Provides guidance for understanding, assessing, prioritising and communicating cybersecurity risks.
-
-Its six core functions are:
-
-* Govern.
-* Identify.
-* Protect.
-* Detect.
-* Respond.
-* Recover.
-
-The framework provides additional context for organisational cybersecurity risk management.
-
-Official reference:
-
-https://www.nist.gov/cyberframework
-
-⸻
-
-11. Assumptions and Limitations
-
-The following assumptions and limitations apply to this project:
-
-1. Nexora Solutions Pvt. Ltd. is a fictional organisation created for educational and portfolio purposes.
-2. Organisational assets and business operations are illustrative.
-3. Threats and vulnerabilities are hypothetical assessment scenarios.
-4. Risk scores are preliminary estimates based on the defined methodology.
-5. The assessment does not include actual technical vulnerability scanning.
-6. Proposed security controls do not indicate actual implementation.
-7. Control effectiveness requires supporting evidence and validation.
-8. Residual risk ratings remain pending until appropriate assessment activities are completed.
-9. Risk acceptance requires documented management authorisation.
-10. The 21 selected controls do not represent a complete assessment of all 93 Annex A controls.
-11. This project does not constitute an official ISO certification or independent compliance audit.
-
-⸻
-
-12. Document Traceability
-
-The following documents form the complete assessment structure.
-
-File	Document	Purpose
-01	Organisation Profile	Defines organisational context
-02	Asset Inventory	Identifies organisational assets
-03	Threat & Vulnerability Assessment	Identifies threats and weaknesses
-04	Risk Assessment	Evaluates and prioritises risks
-05	Risk Treatment Plan	Defines proposed treatment actions
-06	Statement of Applicability	Documents selected security controls
-07	Control Implementation Tracker	Tracks proposed implementation
-08	Residual Risk Assessment	Establishes future residual risk evaluation
-09	Executive Summary	Consolidates assessment findings
-10	Methodology and References	Documents methodology and reference sources
-
-The documents should be reviewed together to maintain consistency across risk identifiers, treatment decisions and control references.
-
-⸻
-
-13. Conclusion
-
-This document establishes the methodology and reference materials supporting the Cybersecurity GRC Risk Assessment Project.
-
-It defines the assessment process, risk scoring approach, treatment principles, control selection methodology, evidence requirements and residual risk evaluation process.
-
-By maintaining consistent documentation and traceability, the project demonstrates a structured approach to information security risk management.
-
-The methodology provides a foundation for future assessment improvements, control implementation and continuous security review.
-
-⸻
-
-Project: Cybersecurity Risk Assessment & ISO 27001 Case Study
-Organisation: Nexora Solutions Pvt. Ltd.
-Document: 10 — Methodology and References
-Status: Revised Assessment Methodology
-
-Disclaimer: This is a simulated educational assessment. The methodology and references support a portfolio case study and do not constitute an independently verified organisational assessment or ISO certification.
+Further work would include completing the full Annex A applicability assessment, evaluating physical security requirements, implementing proposed controls, collecting evidence, validating control effectiveness and reassessing residual risks.
