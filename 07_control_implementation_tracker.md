@@ -1,365 +1,737 @@
-07 — Security Control Implementation Tracker
 
-Organisation: Nexora Solutions Pvt. Ltd.
-Framework: ISO/IEC 27001:2022
-Reference: Annex A
-Document Type: Control Implementation Tracker
-Document Status: Proposed Implementation Baseline
+# 07 — Security Control Implementation Tracker
 
-⸻
+## Document Information
 
-1. Objective
+| Field | Details |
+|---|---|
+| Organisation | Nexora Solutions Pvt. Ltd. |
+| Framework | ISO/IEC 27001:2022 |
+| Document Type | Security Control Implementation Tracker |
+| Related Document | 06 — Statement of Applicability |
+| Version | 1.0 |
+| Assessment Status | Proposed — Not Verified |
 
-The purpose of this document is to track the implementation of selected information security controls identified in the Statement of Applicability.
+---
 
-The tracker establishes:
+## 1. Purpose
 
-* Control implementation responsibilities.
-* Proposed implementation timelines.
-* Current implementation status.
-* Required supporting evidence.
-* Verification requirements.
-* Implementation priorities.
+This document tracks the proposed implementation of the information security controls selected in the Statement of Applicability (SoA).
 
-This document supports accountability, monitoring and continuous improvement of the organisation’s information security controls.
+It establishes:
 
-2. Implementation Status Definitions
+- The security controls requiring implementation.
+- The risks addressed by each control.
+- Proposed responsible roles.
+- Implementation priorities.
+- Evidence required to verify implementation.
+- Current implementation status.
 
-Not Started
+This tracker supports the organisation's risk treatment activities and provides a structured method for monitoring security improvement.
 
-Implementation activities have not yet begun.
+**Important:** This is a proposed implementation tracker. It does not confirm that any control has been implemented, tested, or independently verified.
 
-In Progress
+---
 
-Implementation activities have started, but the control is not yet fully deployed.
+## 2. Implementation Status Definitions
 
-Implemented
+The following status definitions are used throughout this tracker.
 
-The control has been deployed within the organisation.
+- **Proposed — Not Verified:** The control has been selected for implementation, but implementation has not been verified.
+- **In Progress:** Implementation activities have started, but the control is not yet fully implemented.
+- **Implemented — Pending Verification:** Implementation is reported as complete, but supporting evidence or effectiveness has not yet been verified.
+- **Verified:** Sufficient evidence has been reviewed to confirm implementation.
+- **Partially Implemented:** Some requirements are implemented, but gaps remain.
+- **Not Started:** No implementation activity has begun.
 
-Under Review
+All controls currently remain at **Proposed — Not Verified** because no implementation evidence has been provided for this assessment.
 
-The control has been implemented and is undergoing an effectiveness review.
+---
 
-Verified
+## 3. Implementation Tracker
 
-Implementation and effectiveness have been evaluated and supported by appropriate evidence.
+### 3.1 Organisational Controls — Annex A.5
 
-A control must not be marked Verified without sufficient supporting evidence.
+#### A.5.15 — Access Control
 
-3. Implementation Priority
+**Related Risks:** R01, R03, R04
 
-Controls are prioritised according to their associated cybersecurity risks.
+**Objective:** Ensure that access to organisational information and systems is restricted according to business requirements and authorised responsibilities.
 
-* Critical: Immediate implementation priority.
-* High: Priority implementation.
-* Moderate: Planned implementation and monitoring.
+**Proposed Implementation Activities:**
+- Establish an access control policy.
+- Define user access levels based on job responsibilities.
+- Apply least-privilege access principles.
+- Review access permissions periodically.
 
-4. Control Implementation Register
+**Proposed Owner:** IT Administrator / Security Officer
 
-All 21 controls below are proposed.
+**Priority:** High
 
-No implementation or verification evidence has been supplied for this simulated organisation.
+**Evidence Required:**
+- Approved access control policy.
+- User access matrix.
+- Access review records.
+- User account and permission records.
 
-4.1 Organisational Controls — A.5
+**Current Status:** Proposed — Not Verified
 
-A.5.15 — Access Control
+---
 
-* Related Risk: R03 — Insider Data Misuse
-* Responsible: IT Manager
-* Priority: High
-* Target: Within 60 days
-* Status: Not Started
-* Required Evidence: Approved access control policy and access restriction records.
-* Verification: Review access permissions against employee job responsibilities.
+#### A.5.17 — Authentication Information
 
-A.5.17 — Authentication Information
+**Related Risks:** R01, R04
 
-* Related Risk: R01 — Phishing and Account Compromise
-* Responsible: IT Manager
-* Priority: Critical
-* Target: Within 30 days
-* Status: Not Started
-* Required Evidence: Authentication policy and credential management records.
-* Verification: Review authentication information protection practices.
+**Objective:** Protect authentication information, including passwords and other credentials, throughout its lifecycle.
 
-A.5.18 — Access Rights
+**Proposed Implementation Activities:**
+- Establish rules for secure credential handling.
+- Prohibit credential sharing.
+- Apply secure password storage practices.
+- Define procedures for resetting compromised credentials.
 
-* Related Risk: R03 — Insider Data Misuse
-* Responsible: IT Manager
-* Priority: High
-* Target: Within 60 days
-* Status: Not Started
-* Required Evidence: User access register and periodic access review records.
-* Verification: Check whether access rights are appropriate and periodically reviewed.
+**Proposed Owner:** IT Administrator
 
-A.5.23 — Information Security for Use of Cloud Services
+**Priority:** High
 
-* Related Risk: R04 — Cloud Data Exposure
-* Responsible: IT Manager
-* Priority: High
-* Target: Within 60 days
-* Status: Not Started
-* Required Evidence: Cloud security policy and configuration review records.
-* Verification: Review cloud permissions and security configurations.
-
-A.5.30 — ICT Readiness for Business Continuity
-
-* Related Risk: R07 — Hardware Failure and Data Loss
-* Responsible: IT Manager
-* Priority: High
-* Target: Within 90 days
-* Status: Not Started
-* Required Evidence: ICT continuity plan and recovery test records.
-* Verification: Review recovery readiness and conduct recovery exercises.
-
-4.2 People Controls — A.6
-
-A.6.3 — Information Security Awareness, Education and Training
-
-* Related Risk: R01 — Phishing and Account Compromise
-* Responsible: HR Manager
-* Priority: Critical
-* Target: Within 30 days
-* Status: Not Started
-* Required Evidence: Training materials, attendance records and phishing simulation results.
-* Verification: Evaluate employee awareness through assessments or simulations.
-
-4.3 Technological Controls — A.8
-
-A.8.2 — Privileged Access Rights
-
-* Related Risk: R03 — Insider Data Misuse
-* Responsible: IT Manager
-* Priority: High
-* Target: Within 60 days
-* Status: Not Started
-* Required Evidence: Privileged account register and approval records.
-* Verification: Review privileged accounts and access restrictions.
-
-A.8.3 — Information Access Restriction
-
-* Related Risk: R03 — Insider Data Misuse
-* Responsible: IT Manager
-* Priority: High
-* Target: Within 60 days
-* Status: Not Started
-* Required Evidence: Access restriction configurations and permission records.
-* Verification: Test whether unauthorised users can access restricted information.
-
-A.8.5 — Secure Authentication
-
-* Related Risk: R01 — Phishing and Account Compromise
-* Responsible: IT Manager
-* Priority: Critical
-* Target: Within 30 days
-* Status: Not Started
-* Required Evidence: MFA configuration records and authentication security settings.
-* Verification: Review authentication configurations and conduct controlled authentication tests.
-
-A.8.6 — Capacity Management
-
-* Related Risk: R06 — DDoS Service Disruption
-* Responsible: IT Manager
-* Priority: Moderate
-* Target: Within 90 days
-* Status: Not Started
-* Required Evidence: Capacity monitoring records, utilisation reports and capacity planning documentation.
-* Verification: Review resource utilisation and capacity management procedures.
-
-A.8.7 — Protection Against Malware
-
-* Related Risks: R01 and R02
-* Responsible: IT Manager
-* Priority: Critical
-* Target: Within 30 days
-* Status: Not Started
-* Required Evidence: Endpoint protection configurations and malware protection reports.
-* Verification: Review protection coverage and safely test detection capabilities.
-
-A.8.8 — Management of Technical Vulnerabilities
-
-* Related Risk: R05 — Exploitation of Unpatched Software
-* Responsible: IT Manager
-* Priority: High
-* Target: Within 60 days
-* Status: Not Started
-* Required Evidence: Vulnerability assessment reports and patch management records.
-* Verification: Review remediation records and outstanding vulnerabilities.
-
-A.8.9 — Configuration Management
-
-* Related Risk: R04 — Cloud Data Exposure
-* Responsible: IT Manager
-* Priority: High
-* Target: Within 60 days
-* Status: Not Started
-* Required Evidence: Secure configuration standards and configuration review records.
-* Verification: Compare system configurations against approved security baselines.
-
-A.8.13 — Information Backup
-
-* Related Risks: R02 and R07
-* Responsible: IT Manager
-* Priority: Critical
-* Target: Within 30 days
-* Status: Not Started
-* Required Evidence: Backup schedules, backup logs and restoration test reports.
-* Verification: Conduct restoration tests and evaluate backup reliability.
-
-A.8.14 — Redundancy of Information Processing Facilities
-
-* Related Risk: R07 — Hardware Failure and Data Loss
-* Responsible: IT Manager
-* Priority: High
-* Target: Within 90 days
-* Status: Not Started
-* Required Evidence: Infrastructure redundancy documentation and availability test records.
-* Verification: Review redundancy arrangements and test relevant failover procedures.
-
-A.8.16 — Monitoring Activities
-
-* Related Risks: R02, R03 and R04
-* Responsible: IT Manager
-* Priority: High
-* Target: Within 60 days
-* Status: Not Started
-* Required Evidence: Monitoring configurations, security logs and alert records.
-* Verification: Review monitoring coverage and investigate controlled test alerts.
-
-A.8.19 — Installation of Software on Operational Systems
-
-* Related Risk: R05 — Exploitation of Unpatched Software
-* Responsible: IT Manager
-* Priority: High
-* Target: Within 60 days
-* Status: Not Started
-* Required Evidence: Software installation procedures and approval records.
-* Verification: Review software installation permissions and records.
-
-A.8.20 — Networks Security
-
-* Related Risk: R06 — DDoS Service Disruption
-* Responsible: IT Manager
-* Priority: Moderate
-* Target: Within 90 days
-* Status: Not Started
-* Required Evidence: Network security configurations and network review reports.
-* Verification: Review network protection and security configurations.
-
-A.8.21 — Security of Network Services
-
-* Related Risk: R06 — DDoS Service Disruption
-* Responsible: IT Manager
-* Priority: Moderate
-* Target: Within 90 days
-* Status: Not Started
-* Required Evidence: Network service agreements and security configuration records.
-* Verification: Review security requirements and protection mechanisms for network services.
+**Evidence Required:**
+- Authentication and password policy.
+- Credential management procedures.
+- Password reset procedures.
+- Relevant configuration records.
 
-A.8.23 — Web Filtering
+**Current Status:** Proposed — Not Verified
 
-* Related Risk: R01 — Phishing and Account Compromise
-* Responsible: IT Manager
-* Priority: Critical
-* Target: Within 30 days
-* Status: Not Started
-* Required Evidence: Web filtering policies and configuration records.
-* Verification: Conduct controlled tests using safe test domains.
+---
 
-A.8.24 — Use of Cryptography
+#### A.5.18 — Access Rights
 
-* Related Risk: R04 — Cloud Data Exposure
-* Responsible: IT Manager
-* Priority: High
-* Target: Within 60 days
-* Status: Not Started
-* Required Evidence: Cryptographic policy and encryption configuration records.
-* Verification: Review encryption settings and key management practices.
+**Related Risks:** R01, R03, R04
 
-5. Implementation Summary
+**Objective:** Ensure that access rights are granted, reviewed, modified, and removed in accordance with organisational requirements.
 
-The preliminary tracker contains 21 selected controls.
+**Proposed Implementation Activities:**
+- Establish formal access approval procedures.
+- Review user permissions periodically.
+- Remove access when employees leave or change roles.
+- Maintain records of access modifications.
 
-Control Distribution:
+**Proposed Owner:** IT Administrator / HR Manager
 
-* Organisational Controls — A.5: 5
-* People Controls — A.6: 1
-* Technological Controls — A.8: 15
+**Priority:** High
 
-Total: 21
+**Evidence Required:**
+- Access request and approval records.
+- User access review reports.
+- Employee onboarding and offboarding records.
+- Access revocation records.
 
-Initial Implementation Status
+**Current Status:** Proposed — Not Verified
 
-* Not Started: 21
-* In Progress: 0
-* Implemented: 0
-* Under Review: 0
-* Verified: 0
+---
 
-Overall Implementation Progress: 0%
+#### A.5.23 — Information Security for Use of Cloud Services
 
-The figures represent the initial simulated project baseline, not a statement about a real organisation.
+**Related Risks:** R04
 
-6. Evidence Management
+**Objective:** Ensure that cloud services are selected, used, managed, and monitored securely.
 
-Evidence is necessary to demonstrate that security controls have been implemented and are operating as intended.
+**Proposed Implementation Activities:**
+- Establish requirements for cloud service selection.
+- Evaluate cloud providers before adoption.
+- Define responsibilities between the organisation and service providers.
+- Review cloud access permissions and security configurations.
+- Establish cloud data protection requirements.
 
-Examples of acceptable evidence include:
+**Proposed Owner:** IT Administrator / Security Officer
 
-* Approved information security policies.
-* User access review records.
-* MFA configuration screenshots.
-* Backup and recovery test reports.
-* Vulnerability assessment reports.
-* Employee training attendance records.
-* Network security configuration records.
-* Security monitoring reports.
-* Infrastructure redundancy documentation.
-* Capacity monitoring reports.
+**Priority:** High
 
-Evidence should be dated, traceable, appropriately protected and reviewed by authorised personnel.
+**Evidence Required:**
+- Cloud security policy or procedure.
+- Cloud service inventory.
+- Provider security assessments.
+- Cloud access and configuration review records.
+- Relevant contractual security requirements.
 
-Sensitive information must not be exposed in publicly accessible project documentation.
+**Current Status:** Proposed — Not Verified
 
-7. Monitoring and Review
+---
 
-The organisation should periodically review implementation progress.
+#### A.5.24 — Information Security Incident Management Planning and Preparation
 
-The review process should include:
+**Related Risks:** R01, R02, R03, R04, R05, R06, R07
 
-1. Checking implementation deadlines.
-2. Reviewing evidence submitted by responsible departments.
-3. Identifying incomplete controls.
-4. Recording implementation issues.
-5. Evaluating control effectiveness.
-6. Updating implementation statuses.
-7. Escalating overdue Critical and High priority controls.
-8. Reassessing risks when significant security changes occur.
+**Objective:** Establish the organisational capability to prepare for, respond to, and manage information security incidents.
 
-8. Assessment Limitations
+**Proposed Implementation Activities:**
+- Develop an incident response plan.
+- Define incident reporting and escalation procedures.
+- Assign incident response responsibilities.
+- Establish incident classification and documentation procedures.
+- Conduct periodic incident response exercises.
 
-All implementation timelines, responsibilities and evidence requirements are proposed assumptions for this educational case study.
+**Proposed Owner:** Security Officer / IT Administrator
 
-No actual security controls have been deployed or tested.
+**Priority:** High
 
-The tracker demonstrates a proposed GRC monitoring process rather than verified organisational compliance.
+**Evidence Required:**
+- Approved incident response plan.
+- Incident reporting procedure.
+- Incident register.
+- Escalation matrix.
+- Incident response exercise records.
 
-9. Conclusion
+**Current Status:** Proposed — Not Verified
 
-The control implementation tracker establishes a structured method for monitoring the 21 selected security controls.
+---
 
-It assigns preliminary responsibilities, implementation priorities, timelines and evidence requirements.
+#### A.5.30 — ICT Readiness for Business Continuity
 
-The tracker provides a foundation for implementation monitoring and future control effectiveness reviews.
+**Related Risks:** R02, R06, R07
 
-The next stage evaluates the residual risks that may remain after the proposed security controls have been implemented and their effectiveness assessed.
+**Objective:** Ensure that information and communication technology systems can support business continuity requirements during disruptions.
 
-⸻
+**Proposed Implementation Activities:**
+- Identify critical ICT systems and services.
+- Define recovery time and recovery point objectives where appropriate.
+- Establish ICT recovery procedures.
+- Test backup restoration and recovery arrangements.
+- Review continuity arrangements periodically.
 
-Project: Cybersecurity Risk Assessment & ISO 27001 Case Study
-Organisation: Nexora Solutions Pvt. Ltd.
-Document: 07 — Security Control Implementation Tracker
-Status: Proposed Implementation Baseline — 21 Controls
+**Proposed Owner:** IT Administrator / Management
 
-Disclaimer: This is a simulated educational assessment. No implementation or verification evidence has been supplied.
+**Priority:** High
+
+**Evidence Required:**
+- ICT business continuity plan.
+- System recovery procedures.
+- Recovery objectives and requirements.
+- Backup restoration test reports.
+- Business continuity test records.
+
+**Current Status:** Proposed — Not Verified
+
+---
+
+### 3.2 People Controls — Annex A.6
+
+#### A.6.3 — Information Security Awareness, Education and Training
+
+**Related Risks:** R01, R02, R03
+
+**Objective:** Ensure that personnel understand their information security responsibilities and recognise common security threats.
+
+**Proposed Implementation Activities:**
+- Conduct regular security awareness sessions.
+- Provide phishing awareness training.
+- Educate employees about password security and data handling.
+- Maintain training completion records.
+- Evaluate employee awareness periodically.
+
+**Proposed Owner:** HR Manager / Security Officer
+
+**Priority:** Medium
+
+**Evidence Required:**
+- Security awareness training materials.
+- Training attendance records.
+- Employee awareness acknowledgements.
+- Phishing simulation or awareness assessment results.
+
+**Current Status:** Proposed — Not Verified
+
+---
+
+### 3.3 Technological Controls — Annex A.8
+
+#### A.8.2 — Privileged Access Rights
+
+**Related Risks:** R02, R03, R04, R05
+
+**Objective:** Restrict and manage privileged access to systems and sensitive information.
+
+**Proposed Implementation Activities:**
+- Identify privileged accounts.
+- Restrict administrative permissions.
+- Require approval for privileged access.
+- Review privileged accounts periodically.
+- Monitor privileged activities.
+
+**Proposed Owner:** IT Administrator
+
+**Priority:** High
+
+**Evidence Required:**
+- Privileged account inventory.
+- Administrative access approval records.
+- Privileged access review reports.
+- Relevant system audit logs.
+
+**Current Status:** Proposed — Not Verified
+
+---
+
+#### A.8.3 — Information Access Restriction
+
+**Related Risks:** R03, R04
+
+**Objective:** Restrict access to information and associated assets according to the organisation's access control requirements.
+
+**Proposed Implementation Activities:**
+- Define information access restrictions.
+- Apply role-based permissions.
+- Restrict access to sensitive files and folders.
+- Review access permissions regularly.
+
+**Proposed Owner:** IT Administrator / Data Owner
+
+**Priority:** High
+
+**Evidence Required:**
+- Information access policy.
+- File and folder permission records.
+- Role-based access matrix.
+- Access review records.
+
+**Current Status:** Proposed — Not Verified
+
+---
+
+#### A.8.5 — Secure Authentication
+
+**Related Risks:** R01, R04
+
+**Objective:** Implement secure authentication technologies and procedures to protect access to systems and applications.
+
+**Proposed Implementation Activities:**
+- Enable multi-factor authentication where supported.
+- Apply secure authentication configurations.
+- Implement account lockout or other appropriate protections.
+- Review authentication settings periodically.
+
+**Proposed Owner:** IT Administrator
+
+**Priority:** High
+
+**Evidence Required:**
+- MFA configuration records.
+- Authentication policy.
+- System authentication settings.
+- Relevant access and authentication logs.
+
+**Current Status:** Proposed — Not Verified
+
+---
+
+#### A.8.6 — Capacity Management
+
+**Related Risks:** R06
+
+**Objective:** Monitor and manage system resource capacity to maintain the availability and performance of information processing facilities.
+
+**Proposed Implementation Activities:**
+- Identify critical system resources.
+- Monitor CPU, memory, storage, and network utilisation.
+- Establish capacity thresholds.
+- Plan for resource expansion where necessary.
+- Review capacity trends periodically.
+
+**Proposed Owner:** IT Administrator
+
+**Priority:** Medium
+
+**Evidence Required:**
+- Capacity monitoring reports.
+- Resource utilisation records.
+- Capacity planning documentation.
+- System performance reports.
+
+**Current Status:** Proposed — Not Verified
+
+---
+
+#### A.8.7 — Protection Against Malware
+
+**Related Risks:** R02
+
+**Objective:** Protect information and systems against malware and malicious software.
+
+**Proposed Implementation Activities:**
+- Deploy appropriate anti-malware protection.
+- Enable real-time threat detection where available.
+- Keep malware protection tools updated.
+- Restrict execution of unauthorised software.
+- Educate employees about malicious attachments and downloads.
+
+**Proposed Owner:** IT Administrator
+
+**Priority:** High
+
+**Evidence Required:**
+- Anti-malware configuration records.
+- Endpoint protection reports.
+- Malware detection logs.
+- Security update records.
+
+**Current Status:** Proposed — Not Verified
+
+---
+
+#### A.8.8 — Management of Technical Vulnerabilities
+
+**Related Risks:** R05
+
+**Objective:** Identify, assess, and address technical vulnerabilities affecting organisational systems.
+
+**Proposed Implementation Activities:**
+- Maintain an inventory of systems and software.
+- Monitor relevant vulnerability information.
+- Perform periodic vulnerability assessments.
+- Prioritise remediation according to risk.
+- Track patching and remediation activities.
+
+**Proposed Owner:** IT Administrator / Security Officer
+
+**Priority:** High
+
+**Evidence Required:**
+- Vulnerability assessment reports.
+- Software and system inventory.
+- Patch management records.
+- Vulnerability remediation register.
+
+**Current Status:** Proposed — Not Verified
+
+---
+
+#### A.8.9 — Configuration Management
+
+**Related Risks:** R02, R05
+
+**Objective:** Establish and maintain secure configurations for hardware, software, services, and networks.
+
+**Proposed Implementation Activities:**
+- Define secure configuration baselines.
+- Disable unnecessary services and features.
+- Change default credentials and insecure settings.
+- Document configuration changes.
+- Review system configurations periodically.
+
+**Proposed Owner:** IT Administrator
+
+**Priority:** High
+
+**Evidence Required:**
+- Secure configuration standards.
+- System configuration records.
+- Configuration change logs.
+- Periodic configuration review reports.
+
+**Current Status:** Proposed — Not Verified
+
+---
+
+#### A.8.13 — Information Backup
+
+**Related Risks:** R02, R07
+
+**Objective:** Protect organisational information against data loss through appropriate backup arrangements.
+
+**Proposed Implementation Activities:**
+- Establish a backup policy.
+- Define backup frequency based on business requirements.
+- Protect backup copies from unauthorised access.
+- Maintain appropriate backup retention periods.
+- Test restoration procedures periodically.
+
+**Proposed Owner:** IT Administrator
+
+**Priority:** High
+
+**Evidence Required:**
+- Backup policy and schedule.
+- Backup completion logs.
+- Backup retention records.
+- Backup access restrictions.
+- Restoration test reports.
+
+**Current Status:** Proposed — Not Verified
+
+---
+
+#### A.8.16 — Monitoring Activities
+
+**Related Risks:** R01, R02, R03, R04, R05, R06
+
+**Objective:** Monitor networks, systems, and applications to identify unusual behaviour and potential security incidents.
+
+**Proposed Implementation Activities:**
+- Enable appropriate system and security logging.
+- Monitor critical system activities.
+- Establish procedures for reviewing security alerts.
+- Investigate suspicious activities.
+- Retain logs according to organisational requirements.
+
+**Proposed Owner:** IT Administrator / Security Officer
+
+**Priority:** High
+
+**Evidence Required:**
+- Logging and monitoring procedures.
+- System and security logs.
+- Monitoring reports.
+- Security alert records.
+- Incident investigation records.
+
+**Current Status:** Proposed — Not Verified
+
+---
+
+#### A.8.19 — Installation of Software on Operational Systems
+
+**Related Risks:** R02, R05
+
+**Objective:** Control software installation on operational systems to reduce the risk of unauthorised or malicious software.
+
+**Proposed Implementation Activities:**
+- Restrict software installation permissions.
+- Require approval for software installation.
+- Maintain an approved software list.
+- Remove unauthorised applications.
+- Review installed software periodically.
+
+**Proposed Owner:** IT Administrator
+
+**Priority:** Medium
+
+**Evidence Required:**
+- Software installation policy.
+- Approved software inventory.
+- Installation approval records.
+- Software inventory and review reports.
+
+**Current Status:** Proposed — Not Verified
+
+---
+
+#### A.8.20 — Network Security
+
+**Related Risks:** R04, R05, R06
+
+**Objective:** Protect networks and network devices against unauthorised access, misuse, and security threats.
+
+**Proposed Implementation Activities:**
+- Establish network security requirements.
+- Configure firewalls and network access restrictions.
+- Secure network devices.
+- Separate networks where appropriate.
+- Review network security configurations periodically.
+
+**Proposed Owner:** Network Administrator / IT Administrator
+
+**Priority:** High
+
+**Evidence Required:**
+- Network security policy.
+- Network architecture documentation.
+- Firewall configuration records.
+- Network access control records.
+- Network security review reports.
+
+**Current Status:** Proposed — Not Verified
+
+---
+
+#### A.8.21 — Security of Network Services
+
+**Related Risks:** R04, R06
+
+**Objective:** Ensure that security requirements are identified and implemented for network services used by the organisation.
+
+**Proposed Implementation Activities:**
+- Identify network services in use.
+- Define security requirements for each service.
+- Review service provider security arrangements.
+- Monitor network service performance and availability.
+- Review service security requirements periodically.
+
+**Proposed Owner:** IT Administrator / Network Administrator
+
+**Priority:** Medium
+
+**Evidence Required:**
+- Network service inventory.
+- Network service security requirements.
+- Service provider agreements.
+- Service monitoring records.
+- Periodic service review reports.
+
+**Current Status:** Proposed — Not Verified
+
+---
+
+#### A.8.23 — Web Filtering
+
+**Related Risks:** R01, R02, R05
+
+**Objective:** Reduce exposure to malicious and inappropriate websites through appropriate web access controls.
+
+**Proposed Implementation Activities:**
+- Implement web filtering where technically supported.
+- Block known malicious and phishing websites.
+- Restrict access to high-risk website categories where appropriate.
+- Review filtering rules periodically.
+- Monitor web access alerts.
+
+**Proposed Owner:** IT Administrator
+
+**Priority:** Medium
+
+**Evidence Required:**
+- Web filtering configuration.
+- Approved filtering rules.
+- Blocked website logs.
+- Web access monitoring reports.
+
+**Current Status:** Proposed — Not Verified
+
+---
+
+#### A.8.24 — Use of Cryptography
+
+**Related Risks:** R04
+
+**Objective:** Ensure the appropriate use of cryptography to protect the confidentiality, integrity, and authenticity of information.
+
+**Proposed Implementation Activities:**
+- Establish cryptographic requirements.
+- Use appropriate encryption for sensitive data.
+- Protect cryptographic keys.
+- Apply secure communication protocols.
+- Review encryption configurations periodically.
+
+**Proposed Owner:** IT Administrator / Security Officer
+
+**Priority:** High
+
+**Evidence Required:**
+- Cryptographic policy or procedure.
+- Encryption configuration records.
+- Secure communication settings.
+- Key management procedures.
+- Relevant security review records.
+
+**Current Status:** Proposed — Not Verified
+
+---
+
+## 4. Implementation Summary
+
+The following table summarises the selected control distribution.
+
+| Control Category | Selected Controls |
+|---|---:|
+| Organisational Controls — A.5 | 6 |
+| People Controls — A.6 | 1 |
+| Technological Controls — A.8 | 14 |
+| **Total Selected Controls** | **21** |
+
+The selected controls address the principal risks identified in the risk assessment and are intended to support the organisation's proposed risk treatment activities.
+
+---
+
+## 5. Implementation and Verification Requirements
+
+Implementation should follow a controlled process:
+
+1. Assign responsibility for each selected control.
+2. Approve the required policies and procedures.
+3. Implement the necessary technical and organisational measures.
+4. Collect supporting implementation evidence.
+5. Review the evidence against the control objective.
+6. Update the implementation status.
+7. Record unresolved gaps and corrective actions.
+8. Conduct periodic reviews to confirm continued effectiveness.
+
+A control should not be marked as Verified solely because a policy or procedure exists. Evidence of actual implementation and operation should also be considered.
+
+---
+
+## 6. Evidence Management
+
+Evidence should be maintained in a structured manner to support internal reviews and future audits.
+
+Examples of evidence include:
+
+- Approved policies and procedures.
+- System configuration records.
+- Access review reports.
+- Security monitoring logs.
+- Vulnerability assessment reports.
+- Backup and restoration test results.
+- Employee training records.
+- Incident response documentation.
+
+Evidence should be dated, attributable to a responsible person or role, and retained according to organisational requirements.
+
+Sensitive evidence must be protected against unauthorised disclosure.
+
+---
+
+## 7. Relationship with Other Documents
+
+This tracker should be reviewed alongside the following project documents:
+
+- **02 — Asset Inventory:** Identifies information assets requiring protection.
+- **03 — Risk Assessment:** Identifies and evaluates information security risks.
+- **04 — Risk Treatment Plan:** Defines proposed treatment actions for identified risks.
+- **05 — Risk Treatment Plan Details:** Provides detailed treatment activities and control mappings.
+- **06 — Statement of Applicability:** Records the selected controls and their applicability.
+- **08 — Risk Register:** Maintains the identified risks and their treatment status.
+- **09 — Executive Summary:** Communicates the assessment outcomes.
+- **10 — Methodology and References:** Explains the assessment approach and supporting references.
+
+The control IDs, names, and risk mappings in this tracker should remain consistent with the Statement of Applicability and Risk Treatment Plan.
+
+---
+
+## 8. Limitations
+
+This tracker represents a proposed implementation plan rather than evidence of an operational Information Security Management System (ISMS).
+
+The following limitations apply:
+
+- Actual implementation has not been independently verified.
+- Evidence has not been collected or reviewed for this assessment.
+- Responsible roles are proposed assignments, not confirmed employee appointments.
+- Implementation priorities may change following management review.
+- The selected controls represent a risk-based selection and do not constitute a complete assessment of all ISO/IEC 27001:2022 Annex A controls.
+- Physical controls under Annex A.7 are outside the selected control set and have not been assessed in this tracker.
+
+---
+
+## 9. Review and Maintenance
+
+This tracker should be reviewed:
+
+- When new information security risks are identified.
+- When significant changes occur in systems, processes, or business operations.
+- Following security incidents.
+- When control implementation activities are completed.
+- During periodic ISMS reviews.
+- When relevant legal, regulatory, or contractual requirements change.
+
+All changes should be documented to maintain traceability and accountability.
+
+---
+
+## 10. Conclusion
+
+This Security Control Implementation Tracker establishes a structured approach for monitoring the 21 controls selected in the Statement of Applicability.
+
+It connects risk treatment activities with proposed implementation responsibilities and evidence requirements.
+
+Successful implementation will require management support, assigned ownership, appropriate resources, documented procedures, and ongoing verification.
+
+The current status remains **Proposed — Not Verified** until implementation activities are completed and supported by sufficient evidence.
