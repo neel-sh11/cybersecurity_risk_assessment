@@ -88,6 +88,8 @@ Relevant ISO/IEC 27001:2022 Controls:
 * A.5.17 — Authentication information.
 * A.8.7 — Protection against malware.
 * A.8.23 — Web filtering.
+* A.5.24 — Information security incident management planning and preparation.
+* A.8.16 — Monitoring activities.
 
 Responsible Departments: IT and HR
 
@@ -112,6 +114,8 @@ Relevant ISO/IEC 27001:2022 Controls:
 * A.8.8 — Management of technical vulnerabilities.
 * A.8.13 — Information backup.
 * A.8.16 — Monitoring activities.
+* A.5.24 — Information security incident management planning and preparation.
+* A.5.30 — ICT readiness for business continuity.
 
 Responsible Department: IT Department
 
@@ -136,7 +140,8 @@ Relevant ISO/IEC 27001:2022 Controls:
 * A.5.18 — Access rights.
 * A.8.2 — Privileged access rights.
 * A.8.3 — Information access restriction.
-
+* A.8.16 — Monitoring activities.
+  
 Responsible Departments: IT and HR
 
 R04 — Cloud Data Exposure
@@ -161,7 +166,7 @@ Relevant ISO/IEC 27001:2022 Controls:
 * A.8.9 — Configuration management.
 * A.8.24 — Use of cryptography.
 * A.8.5 — Secure authentication.
-
+* A.8.16 — Monitoring activities.
 
 Responsible Department: IT Department
 
@@ -190,7 +195,10 @@ Relevant ISO/IEC 27001:2022 Controls:
 * A.8.5 — Secure authentication.
 * A.8.7 — Protection against malware.
 * A.8.23 — Web filtering.
-
+* A.8.8 — Management of technical vulnerabilities.
+* A.8.9 — Configuration management.
+* A.8.19 — Installation of software on operational systems.
+ 
 Responsible Department: IT Department
 
 R06 — DDoS Service Disruption
@@ -211,8 +219,9 @@ Risk Treatment Actions:
 Relevant ISO/IEC 27001:2022 Controls:
 
 * A.8.6 — Capacity management.
-* A.8.20 — Networks security.
+* A.8.20 — Network security.
 * A.8.21 — Security of network services.
+* A.8.16 — Monitoring activities. 
 
 Responsible Department: IT Department
 
@@ -230,6 +239,12 @@ Risk Treatment Actions:
 4. Monitor hardware health and identify potential equipment failures.
 5. Establish business continuity and disaster recovery procedures.
 6. Evaluate redundancy options for critical information processing infrastructure.
+
+  ### Cross-Cutting Incident Management Control
+
+A.5.24 — Information security incident management planning and preparation is a cross-cutting control relevant to all seven identified risks.
+
+The organisation should establish incident reporting, escalation, response and documentation procedures that can support the management of different security incidents. 
 
 Relevant ISO/IEC 27001:2022 Controls:
 
