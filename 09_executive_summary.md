@@ -1,243 +1,258 @@
 09 — Executive Summary
 
-1. Document Information
-
-* Organization: Nexora Solutions Pvt. Ltd.
-* Assessment Type: Simulated Cybersecurity Risk Assessment
-* Framework: ISO/IEC 27001:2022
-* Document Type: Executive Summary
-* Version: 1.1
-* Status: Draft — Pending Validation
-* Prepared By: GRC Assessment Team
+Organisation: Nexora Solutions Pvt. Ltd.
+Project: Cybersecurity Risk Assessment & ISO 27001 Case Study
+Framework: ISO/IEC 27001:2022
+Document Type: Executive Summary
+Version: 2.0
+Assessment Status: Simulated — Proposed Controls Not Implemented
 
 ⸻
 
-2. Executive Overview
+1. Executive Overview
 
-This document presents an executive overview of the simulated Information Security Risk Assessment conducted for Nexora Solutions Pvt. Ltd.
+This project presents a simulated cybersecurity risk assessment and Governance, Risk and Compliance (GRC) case study for Nexora Solutions Pvt. Ltd., a fictional organisation.
 
-The assessment focuses on identifying information security risks, evaluating their potential impact, determining appropriate risk treatment measures, and reviewing the applicability and implementation status of relevant security controls.
+The assessment demonstrates a structured approach to identifying information security risks, evaluating potential business impacts, selecting relevant security controls and establishing a risk treatment and monitoring process.
 
-The project follows the principles of ISO/IEC 27001:2022 to demonstrate a structured approach to information security risk management.
+ISO/IEC 27001:2022 serves as the primary reference framework, with supporting guidance from ISO/IEC 27005:2022, ISO/IEC 27002:2022 and NIST Cybersecurity Framework 2.0.
 
-The assessment identifies seven major information security risks affecting organizational assets, systems, information, and business operations.
+The project follows a risk-based approach to information security management, connecting organisational assets, threats, vulnerabilities, risk evaluation, treatment decisions and control applicability.
 
-⸻
+2. Assessment Objectives
 
-3. Assessment Objectives
+The primary objectives of this project are to:
 
-The primary objectives of this assessment are:
+1. Establish a simulated organisational security assessment context.
+2. Identify and document important information assets.
+3. Identify potential cybersecurity threats and vulnerabilities.
+4. Evaluate risks using a consistent likelihood and impact methodology.
+5. Establish appropriate risk treatment strategies.
+6. Map selected security controls to identified risks.
+7. Develop a preliminary Statement of Applicability.
+8. Establish a control implementation tracking process.
+9. Define a methodology for future residual risk assessment.
+10. Document assessment assumptions, limitations and supporting references.
 
-1. Identify and document organizational information assets.
-2. Identify potential threats and vulnerabilities.
-3. Evaluate information security risks using a consistent scoring methodology.
-4. Determine appropriate risk treatment strategies.
-5. Identify relevant ISO/IEC 27001:2022 Annex A controls.
-6. Track proposed security control implementation.
-7. Establish a process for evaluating residual risks.
-8. Support management review and informed risk acceptance decisions.
+3. Assessment Scope
 
-⸻
+The assessment considers the following information security areas:
 
-4. Key Risk Assessment Findings
+* Organisational information assets.
+* Client and business information protection.
+* Identity and access management.
+* Email and endpoint security.
+* Malware and ransomware protection.
+* Cloud security configurations.
+* Software vulnerability management.
+* Network security and service availability.
+* Backup, recovery and business continuity.
 
-The assessment identified seven information security risks.
+The assessment is limited to the fictional organisational environment and illustrative scenarios documented in the project.
+
+It does not include actual penetration testing, technical vulnerability scanning or independent security verification.
+
+4. Key Assessment Findings
+
+The assessment identified seven potential cybersecurity risks.
+
+4.1 Risk Distribution
+
+Risk Rating	Number of Risks
+Critical	2
+High	4
+Moderate	1
+Low	0
+Total	7
+
+4.2 Critical Risks
 
 R01 — Phishing and Account Compromise
 
-* Initial Risk Score: 20
-* Risk Rating: Critical
-* Primary Concern: Credential theft and unauthorized account access.
-* Proposed Treatment: Multi-Factor Authentication, email security, and employee awareness training.
+Potential compromise of employee accounts through fraudulent emails, malicious links and credential theft.
+
+Initial Risk Score: 20/25.
 
 R02 — Ransomware Infection
 
-* Initial Risk Score: 20
-* Risk Rating: Critical
-* Primary Concern: Data encryption, operational disruption, and potential data loss.
-* Proposed Treatment: Endpoint protection, secure backups, patch management, and security monitoring.
+Potential encryption of critical organisational information, resulting in data unavailability and business disruption.
+
+Initial Risk Score: 20/25.
+
+4.3 High Risks
 
 R03 — Insider Data Misuse
 
-* Initial Risk Score: 15
-* Risk Rating: High
-* Primary Concern: Unauthorized access, misuse, or disclosure of sensitive organizational information.
-* Proposed Treatment: Least privilege, access reviews, and privileged activity monitoring.
+Unauthorised access to or misuse of sensitive information through excessive user permissions.
+
+Initial Risk Score: 15/25.
 
 R04 — Cloud Data Exposure
 
-* Initial Risk Score: 15
-* Risk Rating: High
-* Primary Concern: Exposure of sensitive information through insecure cloud configurations or permissions.
-* Proposed Treatment: Cloud access restrictions, configuration reviews, and encryption.
+Potential exposure of organisational information due to insecure cloud configurations and access permissions.
+
+Initial Risk Score: 15/25.
 
 R05 — Exploitation of Unpatched Software
 
-* Initial Risk Score: 16
-* Risk Rating: High
-* Primary Concern: Exploitation of known technical vulnerabilities.
-* Proposed Treatment: Vulnerability assessments, patch management, and software inventory maintenance.
+Potential exploitation of known vulnerabilities in outdated operating systems and applications.
 
-R06 — DDoS Service Disruption
-
-* Initial Risk Score: 9
-* Risk Rating: Moderate
-* Primary Concern: Service unavailability caused by malicious network traffic.
-* Proposed Treatment: DDoS protection, network monitoring, and capacity management.
+Initial Risk Score: 16/25.
 
 R07 — Hardware Failure and Data Loss
 
-* Initial Risk Score: 12
-* Risk Rating: High
-* Primary Concern: Operational disruption and loss of important organizational information.
-* Proposed Treatment: Regular backups, recovery testing, and hardware monitoring.
+Potential loss of information or operational disruption due to hardware failure and inadequate recovery arrangements.
 
-⸻
+Initial Risk Score: 12/25.
 
-5. Overall Risk Distribution
+4.4 Moderate Risk
 
-The initial risk assessment produced the following distribution:
+R06 — DDoS Service Disruption
 
-* Critical Risks: 2
-* High Risks: 4
-* Moderate Risks: 1
-* Low Risks: 0
+Potential unavailability of the company’s public website due to excessive malicious network traffic.
 
-Key Observations
+Initial Risk Score: 9/25.
 
-1. Phishing and ransomware represent the highest initial risk scores.
-2. Access management and cloud security require significant attention.
-3. Vulnerability management is important for reducing exposure to technical attacks.
-4. Backup and recovery procedures are necessary to support information availability.
-5. Network availability should be supported through appropriate monitoring and protection measures.
+5. Risk Assessment Methodology
 
-The results indicate that Nexora Solutions Pvt. Ltd. should prioritize its security improvement activities according to the assessed risk levels.
+The project uses a qualitative 5×5 risk assessment matrix.
 
-⸻
+Risk scores are calculated using:
+
+Risk Score = Likelihood × Impact
+
+Both likelihood and impact are assigned values between 1 and 5.
+
+The resulting risk scores are classified as:
+
+* 1–4: Low.
+* 5–9: Moderate.
+* 10–16: High.
+* 17–25: Critical.
+
+This methodology provides a consistent approach to evaluating and prioritising the identified cybersecurity risks.
 
 6. Risk Treatment Strategy
 
-The assessment considers four risk treatment approaches:
+All seven identified risks have been assigned a mitigation strategy.
 
-* Risk Modification: Introducing security controls to reduce risk likelihood or impact.
-* Risk Avoidance: Discontinuing activities that create unacceptable risks.
-* Risk Sharing: Sharing certain risks through contractual arrangements or insurance.
-* Risk Retention: Accepting risks through documented and authorized decisions.
+The proposed treatment activities focus on:
 
-Risk treatment priorities should consider the initial risk ratings, organizational requirements, available resources, and management decisions.
+* Improving employee security awareness.
+* Strengthening authentication and access controls.
+* Improving malware and ransomware protection.
+* Establishing formal vulnerability and patch management.
+* Strengthening cloud security configurations.
+* Improving network protection and monitoring.
+* Establishing reliable backup and recovery arrangements.
+* Improving ICT readiness for business continuity.
 
-The proposed treatment measures are documented in the Risk Treatment Plan.
+The proposed treatments are documented in the Risk Treatment Plan.
 
-⸻
+No proposed treatment should be interpreted as proof of actual control implementation.
 
-7. Security Control Assessment
+7. Statement of Applicability
 
-Relevant ISO/IEC 27001:2022 Annex A controls have been selected for consideration through the Statement of Applicability (SoA).
+The preliminary Statement of Applicability identifies 21 selected ISO/IEC 27001:2022 Annex A controls.
 
-The implementation tracker currently records:
+The selected controls are distributed as follows:
 
-* Selected Controls: 18
-* Implemented Controls: 0
-* Verified Controls: 0
-* Implementation Progress: 0%
+Control Category	Selected Controls
+Organisational (A.5)	5
+People (A.6)	1
+Physical (A.7)	Not Assessed
+Technological (A.8)	15
+Total Selected	21
 
-The selected controls are currently at the planning stage.
+The selected controls address the cybersecurity risks identified during the assessment.
 
-No control implementation or effectiveness is claimed without supporting evidence.
+The preliminary SoA is not a complete assessment of all 93 Annex A controls. Additional applicability and exclusion assessments are required.
 
-Future implementation activities should include assigning control owners, defining implementation timelines, maintaining evidence, and verifying control effectiveness.
+8. Control Implementation Status
 
-⸻
+A preliminary implementation tracker has been developed for the 21 selected controls.
 
-8. Key Recommendations
+The initial project baseline is:
 
-Based on the identified risks, the following actions are recommended:
+Implementation Status	Controls
+Not Started	21
+In Progress	0
+Implemented	0
+Under Review	0
+Verified	0
 
-1. Prioritize phishing prevention and account security.
-2. Establish secure backup and recovery procedures.
-3. Strengthen identity and access management.
-4. Introduce regular vulnerability identification and patch management.
-5. Review cloud security configurations and permissions.
-6. Establish network monitoring and service availability protections.
-7. Develop incident response and recovery procedures.
-8. Conduct periodic security awareness training.
-9. Maintain documented control implementation evidence.
-10. Conduct regular risk reassessments.
+Initial Implementation Progress: 0%
 
-⸻
+The tracker defines proposed responsibilities, implementation priorities, timelines and evidence requirements.
 
-9. Residual Risk and Management Review
+These are planning assumptions for the simulated case study, not verified organisational activities.
 
-Residual risk scores have not yet been established.
+9. Residual Risk Assessment
 
-They will be determined after the proposed controls have been implemented and their effectiveness has been evaluated.
+A residual risk assessment framework has been established for all seven identified risks.
 
-Management should review:
+However, residual risk scores remain pending because the proposed controls have not been implemented or independently verified.
 
-* Initial risk ratings and treatment priorities.
-* Control implementation progress.
-* Supporting evidence and verification results.
-* Remaining risk exposure.
-* Risk acceptance decisions.
+Residual risk evaluation will require:
 
-Residual risks must be formally reviewed and accepted by the appropriate risk owners or management representatives.
+* Evidence of control implementation.
+* Review of control effectiveness.
+* Updated likelihood and impact assessments.
+* Documentation of remaining risk exposure.
+* Appropriate risk owner and management review.
+* Formal approval of accepted residual risks.
 
-⸻
+No reduction in the initial risk scores is currently claimed.
 
-10. Expected Outcomes
+10. Key Recommendations
 
-The project aims to support Nexora Solutions Pvt. Ltd. in:
+Based on the preliminary assessment, the following activities are recommended:
 
-* Improving awareness of information security risks.
-* Establishing a structured risk management approach.
-* Prioritizing security improvements.
-* Improving accountability and risk ownership.
-* Supporting the development of an Information Security Management System (ISMS).
-* Establishing a foundation for continuous improvement.
+1. Prioritise treatment of Critical risks involving phishing and ransomware.
+2. Strengthen authentication and privileged access management.
+3. Establish a formal vulnerability and patch management process.
+4. Improve cloud security configuration and access reviews.
+5. Maintain reliable and tested backup arrangements.
+6. Improve security awareness and employee training.
+7. Establish appropriate network monitoring and protection.
+8. Develop business continuity and incident response procedures.
+9. Complete the applicability assessment of all 93 Annex A controls.
+10. Conduct periodic risk and control effectiveness reviews.
 
-⸻
+11. Project Limitations
 
-11. Limitations and Disclaimer
+This project is a simulated educational GRC case study created for learning and professional portfolio purposes.
 
-This project is a simulated GRC case study developed for educational and professional portfolio purposes.
+The fictional organisation, its information assets, threats, vulnerabilities and risk scenarios are illustrative.
 
-Nexora Solutions Pvt. Ltd. is a fictional organization.
+The project does not represent:
 
-The assessment does not represent:
+* An actual organisational security audit.
+* A penetration test or vulnerability assessment.
+* An independently verified compliance assessment.
+* An implemented Information Security Management System.
+* ISO/IEC 27001 certification.
+* Verified control effectiveness or residual risk reduction.
 
-* An actual organizational security audit.
-* A penetration testing engagement.
-* An official ISO certification assessment.
-* Verified implementation of security controls.
-* Independent validation of organizational compliance.
-
-All risk scenarios, scores, and proposed treatments are illustrative. Actual implementation, control effectiveness, and residual risk conclusions would require appropriate organizational evidence and management validation.
-
-⸻
+The selected controls and implementation plans represent proposed improvements only.
 
 12. Conclusion
 
-The assessment identifies seven information security risks and establishes a structured approach for their evaluation and treatment.
+This project demonstrates a structured approach to cybersecurity risk management using ISO/IEC 27001:2022 as its primary reference framework.
 
-The initial findings indicate that phishing, ransomware, access management, cloud security, and vulnerability management require particular attention.
+It connects organisational assets with potential threats and vulnerabilities, evaluates seven cybersecurity risks, defines treatment strategies and maps selected security controls to identified risks.
 
-Although relevant security controls have been identified, implementation and verification activities remain pending.
+The project also establishes preliminary processes for control implementation tracking, evidence management and residual risk evaluation.
 
-The next stage should focus on implementing prioritized controls, collecting supporting evidence, reassessing residual risks, and obtaining appropriate management approval.
+The assessment highlights the importance of maintaining traceability between risks, treatments and security controls while distinguishing proposed improvements from verified implementation.
 
-Effective information security requires continuous monitoring, documented accountability, and ongoing improvement.
+Overall, the case study demonstrates the fundamental GRC activities required to support a risk-based information security management approach.
 
 ⸻
 
-13. Document Status
+Project: Cybersecurity Risk Assessment & ISO 27001 Case Study
+Organisation: Nexora Solutions Pvt. Ltd.
+Document: 09 — Executive Summary
+Status: Final Portfolio Summary — Simulated Assessment
 
-* Initial Risk Assessment: Completed
-* Risk Treatment Planning: Documented
-* Statement of Applicability: Documented
-* Control Implementation: Not Started
-* Residual Risk Validation: Pending
-* Management Approval: Pending
-
-Primary Framework: ISO/IEC 27001:2022
-
-Supporting References: ISO/IEC 27005:2022 and ISO/IEC 27002:2022
+Disclaimer: This is a hypothetical educational project. All organisational details, risk scenarios and proposed security improvements are illustrative and have not been independently verified.
