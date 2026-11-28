@@ -1,152 +1,209 @@
-# Cybersecurity Risk Assessment & GRC Case Study
+# 10 — Methodology and References
 
-A simulated cybersecurity risk assessment and Governance, Risk and Compliance (GRC) case study based on **ISO/IEC 27001:2022**.
-
-The project shows how an organisation can identify information security risks, evaluate their impact, plan treatment and map controls to an established framework, using a fictional company, **Nexora Solutions Pvt. Ltd.**
-
----
-
-## Project at a Glance
-
-| Attribute | Details |
+| Field | Details |
 |---|---|
-| Organisation | Nexora Solutions Pvt. Ltd. (fictional IT services company, 85 employees) |
-| Project type | Simulated GRC case study |
+| Organisation | Nexora Solutions Pvt. Ltd. (fictional) |
+| Document | 10 — Methodology and References |
 | Framework | ISO/IEC 27001:2022 |
-| Assets assessed | 10 |
-| Threats / vulnerabilities | 9 / 8 |
-| Risks assessed | 9 (2 Critical, 6 High, 1 Moderate) |
-| Annex A controls reviewed | 93 (23 selected, 55 pending, 14 out of scope, 1 not applicable) |
-| Control implementation | 0 of 23 verified (all Proposed — Not Verified) |
-| Actual residual risk | Pending implementation and validation |
-
-**Purpose:** to demonstrate practical understanding of risk assessment, risk treatment, control applicability and security governance documentation.
+| Version | 2.0 |
+| Status | Final — Methodology Documentation |
 
 ---
 
-## Assessment Workflow
+## 1. Introduction
+
+This document explains the methodology, scoring criteria, terminology and references used across the Nexora Solutions risk assessment. The project is educational and portfolio-based. It is not a certification audit or an assessment of a real organisation.
+
+---
+
+## 2. Assessment Workflow
 
 ```mermaid
 flowchart LR
-    A[Context] --> B[Assets]
-    B --> C[Threats and vulnerabilities]
-    C --> D[Risk assessment]
-    D --> E[Treatment plan]
-    E --> F[Statement of Applicability]
-    F --> G[Implementation tracker]
-    G --> H[Residual risk]
-    H --> I[Executive summary]
+    A[01 Context] --> B[02 Assets]
+    B --> C[03 Threats and vulnerabilities]
+    C --> D[04 Risk assessment]
+    D --> E[05 Treatment plan]
+    E --> F[06 Statement of Applicability]
+    F --> G[07 Implementation tracker]
+    G --> H[08 Residual risk]
+    H --> I[09 Executive summary]
 ```
 
+| Step | Document | Output |
+|---|---|---|
+| Organisational context | `01_organisation_profile.md` | Scope, roles, assumptions |
+| Asset identification | `02_asset_inventory.md` | 10 assets with classification and CIA ratings |
+| Threats and vulnerabilities | `03_threat_vulnerability_assessment.md` | 9 threats, 8 vulnerabilities |
+| Risk assessment | `04_risk_assessment.md` | 9 rated risks, register, heat map |
+| Risk treatment | `05_risk_treatment_plan.md` | Strategies and control mapping |
+| Statement of Applicability | `06_statement_of_applicability.md` | Decisions for all 93 Annex A controls |
+| Implementation tracking | `07_control_implementation_tracker.md` | 23 controls with owners and evidence needs |
+| Residual risk | `08_residual_risk_assessment.md` | Target levels and reassessment rules |
+| Executive reporting | `09_executive_summary.md` | Management summary |
+
 ---
 
-## Repository Structure
+## 3. Traceability
 
-| File | Description |
+Each risk can be traced through the whole chain:
+
+**Asset → Threat → Vulnerability → Risk → Treatment → Annex A control → Tracker entry → Residual risk**
+
+Example: A05 Corporate Email → T01 Phishing and T06 Credential theft → V01, V02, V03 → R01 → MFA, email and web filtering, training → A.5.17, A.6.3, A.8.5, A.8.7, A.8.16, A.8.23 → tracker entries → R01 target residual.
+
+---
+
+## 4. Terminology
+
+| Term | Meaning in this project |
 |---|---|
-| [`01_organisation_profile.md`](01_organisation_profile.md) | Organisation background, roles and assessment scope |
-| [`02_asset_inventory.md`](02_asset_inventory.md) | Asset identification, classification and CIA ratings |
-| [`03_threat_vulnerability_assessment.md`](03_threat_vulnerability_assessment.md) | Threats, vulnerabilities and their mapping |
-| [`04_risk_assessment.md`](04_risk_assessment.md) | Risk scoring, risk register and heat map |
-| [`05_risk_treatment_plan.md`](05_risk_treatment_plan.md) | Treatment strategies, Annex A controls and phases |
-| [`06_statement_of_applicability.md`](06_statement_of_applicability.md) | Decisions for all 93 Annex A controls |
-| [`07_control_implementation_tracker.md`](07_control_implementation_tracker.md) | Owners, priorities, activities and evidence for 23 controls |
-| [`08_residual_risk_assessment.md`](08_residual_risk_assessment.md) | Target residual risk and reassessment rules |
-| [`09_executive_summary.md`](09_executive_summary.md) | Management-level summary |
-| [`10_methodology_and_references.md`](10_methodology_and_references.md) | Methodology, scoring criteria and references |
-
-**Suggested reading order:** start with `09_executive_summary.md`, then follow `01` to `08`. Read `10` for the methodology.
+| Asset | Information or a resource that has value to the organisation |
+| Threat | A potential cause of harm |
+| Vulnerability | A weakness that a threat could exploit |
+| Risk | The combination of likelihood and impact of a threat exploiting a vulnerability |
+| Initial risk | Risk before proposed treatment; no existing control is assumed to be verified |
+| Target residual risk | Planned risk level if the proposed controls are implemented and effective |
+| Actual residual risk | Risk measured after implementation and effectiveness testing |
+| Risk owner | Person accountable for managing a risk |
 
 ---
 
-## Identified Risks
+## 5. Risk Scoring
 
-| ID | Risk | Score | Rating |
-|---|---|---|---|
-| R01 | Phishing and Account Compromise | 20 | Critical |
-| R02 | Ransomware Infection | 20 | Critical |
-| R03 | Insider Data Misuse | 15 | High |
-| R04 | Cloud Data Exposure | 15 | High |
-| R05 | Exploitation of Unpatched Software | 16 | High |
-| R06 | DDoS Service Disruption | 9 | Moderate |
-| R07 | Hardware Failure and Data Loss | 12 | High |
-| R08 | Source Code Compromise | 12 | High |
-| R09 | Financial Records Compromise or Tampering | 12 | High |
+**Risk Score = Likelihood × Impact**, both on a five-point scale.
 
-Each risk is linked to an asset, threats, vulnerabilities, an owner and Annex A controls.
+### Likelihood
 
----
+| Score | Rating | Description |
+|---|---|---|
+| 1 | Rare | Highly unlikely to occur |
+| 2 | Unlikely | Could occur, but not expected |
+| 3 | Possible | May occur under certain circumstances |
+| 4 | Likely | Expected to occur in relevant circumstances |
+| 5 | Almost certain | Expected to occur frequently |
 
-## Methodology in Brief
+### Impact
 
-- **Risk Score = Likelihood × Impact**, each on a 1–5 scale.
-- Bands: **1–4 Low · 5–9 Moderate · 10–16 High · 17–25 Critical**. These are this project's own criteria, not ISO requirements.
-- **Initial risk** is before treatment. **Target residual risk** is a plan. **Actual residual risk** is only assigned after evidence of implementation and effectiveness.
+| Score | Rating | Description |
+|---|---|---|
+| 1 | Insignificant | Minimal operational or information impact |
+| 2 | Minor | Limited disruption or loss |
+| 3 | Moderate | Noticeable operational or information impact |
+| 4 | Major | Significant business disruption or information compromise |
+| 5 | Severe | Critical business, financial, legal or reputational consequences |
 
-Full details are in [`10_methodology_and_references.md`](10_methodology_and_references.md).
+### Rating bands
 
----
+| Score | Rating | Treatment priority |
+|---|---|---|
+| 1–4 | Low | Routine monitoring |
+| 5–9 | Moderate | Planned improvement |
+| 10–16 | High | Priority treatment |
+| 17–25 | Critical | Immediate attention |
 
-## Key GRC Concepts Demonstrated
-
-- Governance, Risk and Compliance (GRC)
-- Asset inventory and classification
-- Threat and vulnerability analysis
-- Likelihood and impact assessment, risk register and heat map
-- Risk treatment options and risk acceptance criteria
-- ISO/IEC 27001:2022 Annex A control mapping
-- Statement of Applicability (all 93 controls)
-- Control implementation tracking and evidence requirements
-- Residual risk assessment
-- Management-level security reporting and traceability
+These bands are the project's own criteria, not thresholds prescribed by ISO/IEC 27001.
 
 ---
 
-## Standards and References
+## 6. Risk Acceptance Criteria (Illustrative Risk Appetite)
 
-- ISO/IEC 27001:2022 — Information Security Management Systems
-- ISO/IEC 27002:2022 — Information Security Controls
-- ISO/IEC 27005:2022 — Information Security Risk Management
-- ISO 31000:2018 — Risk Management Guidelines
-- NIST Cybersecurity Framework 2.0
+| Residual rating | Required action | Approver |
+|---|---|---|
+| Low | Accept with routine monitoring | Risk owner |
+| Moderate | Accept with documented periodic review | Risk owner |
+| High | Further treatment, or formal acceptance with justification | Senior Management |
+| Critical | Not acceptable; further treatment required | Senior Management |
 
-Official resources: [ISO](https://www.iso.org/) · [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
-
----
-
-## Limitations and Disclaimer
-
-This is an independent educational portfolio project using a fictional organisation.
-
-- Nexora Solutions Pvt. Ltd. is not a real assessed organisation.
-- Assets, threats, vulnerabilities and risk scenarios are simulated.
-- Risk scores are based on stated assumptions, not measurements.
-- No real infrastructure was accessed; no penetration testing or vulnerability scanning was performed.
-- 55 Annex A controls are pending full assessment and 14 physical controls are out of scope.
-- Third-party and supplier risk is acknowledged but not assessed.
-- No control has been verified as implemented.
-- This is not an ISO/IEC 27001 certification audit or proof of compliance.
+Stated aim: reduce all risks to Moderate or below, with any High residual risk formally approved.
 
 ---
 
-## Version History
+## 7. Risk Treatment and Control Selection
 
-| Version | Summary |
+Treatment options: **avoid**, **mitigate**, **transfer or share**, **accept**. This project mainly proposes mitigation.
+
+Control selection considers:
+
+1. The nature of the risk and the assets affected
+2. Likelihood and impact
+3. The chosen treatment strategy
+4. Relevance of ISO/IEC 27001:2022 Annex A controls
+5. The evidence needed to show implementation
+
+A selected control is not an implemented control.
+
+---
+
+## 8. Statement of Applicability Approach
+
+All 93 Annex A controls are listed in `06` with one of four decisions: **Selected**, **Pending**, **Out of scope** or **Not applicable**. The decision counts are 23, 55, 14 and 1.
+
+---
+
+## 9. Control Implementation Status Definitions
+
+| Status | Meaning |
 |---|---|
-| 1.0 | Initial case study: 7 risks, 22 selected controls |
-| 2.0 | Added R08 and R09 so every asset is covered; full 93-control Statement of Applicability; consistent control mapping across documents; target residual risk; heat maps; formatted tables |
+| Proposed — Not Verified | Selected; implementation not established by evidence |
+| In Progress | Implementation started but incomplete |
+| Implemented — Pending Verification | Reported as deployed; effectiveness not verified |
+| Partially Implemented | Some requirements met; gaps remain |
+| Verified | Implementation and effectiveness assessed with evidence |
+
+The baseline for all 23 selected controls is **Proposed — Not Verified**.
 
 ---
 
-## Author
+## 10. Residual Risk Evaluation
 
-**Neelkumar Nileshbhai Shrimali**
-Cybersecurity | Governance, Risk & Compliance | Information Security
+After treatment, evaluation should consider:
 
-- GitHub: [neel-sh11](https://github.com/neel-sh11)
-- LinkedIn: Neel Shrimali
-- Email: framebyneels@gmail.com
+- Whether each control is implemented and supported by evidence
+- Whether it operates as intended
+- Whether likelihood or impact has changed
+- Whether further treatment is needed
+- Whether the remaining risk is within acceptance criteria
+
+Residual scores are recalculated with the same method as the initial assessment. Targets in `08` are planning aims, not results.
 
 ---
 
-*This repository is part of an independent cybersecurity learning and portfolio development journey.*
+## 11. Assumptions and Limitations
+
+1. Nexora Solutions Pvt. Ltd. is fictional and the environment is simulated.
+2. Assets, threats, vulnerabilities and risk scenarios are illustrative.
+3. Ratings are based on stated assumptions, not measurements.
+4. No real systems were accessed, scanned or tested.
+5. 23 Annex A controls are selected; 55 are pending assessment and 14 physical controls are out of scope.
+6. Third-party and supplier risk is acknowledged but not assessed.
+7. No implementation evidence has been supplied or verified.
+8. Actual residual risk is pending.
+
+---
+
+## 12. References
+
+1. ISO/IEC 27001:2022 — Information security, cybersecurity and privacy protection — Information security management systems — Requirements
+2. ISO/IEC 27002:2022 — Information security controls
+3. ISO/IEC 27005:2022 — Guidance on managing information security risks
+4. ISO 31000:2018 — Risk management — Guidelines
+5. NIST Cybersecurity Framework 2.0
+
+Official resources:
+
+- ISO: https://www.iso.org/
+- NIST Cybersecurity Framework: https://www.nist.gov/cyberframework
+
+This project draws on the general principles of these references. It does not claim conformity or certification.
+
+---
+
+## 13. Conclusion
+
+The methodology links context, assets, threats, risk evaluation, treatment, control selection and residual risk planning in one traceable chain, and keeps proposed improvements separate from verified implementation.
+
+---
+
+**Project:** Cybersecurity Risk Assessment & ISO 27001 Case Study
+**Document:** 10 — Methodology and References
