@@ -1,211 +1,138 @@
-02 — Asset Identification & Classification
+# 02 — Asset Identification and Classification
 
-Organisation: Nexora Solutions Pvt. Ltd.
-Assessment Type: Simulated Cybersecurity Risk Assessment
-Framework Reference: ISO/IEC 27001:2022
-Document Status: Initial Assessment
+| Field | Details |
+|---|---|
+| Organisation | Nexora Solutions Pvt. Ltd. (fictional) |
+| Document | 02 — Asset Identification and Classification |
+| Framework | ISO/IEC 27001:2022 |
+| Version | 2.0 |
+| Status | Final — Simulated Assessment |
+
+---
+
+## 1. Objective
+
+Identify the information, systems and resources that support Nexora's business operations. Each asset is given:
+
+- A unique asset ID
+- A category and an owner
+- A classification level
+- A CIA (Confidentiality, Integrity, Availability) rating
 
-⸻
-
-1. Objective
-
-The purpose of asset identification is to identify the information, systems and resources that support the organisation’s business operations.
-
-Each asset is assigned:
-
-* A unique asset ID
-* An asset category
-* An assigned owner
-* A security classification
-* A CIA security assessment
-
-⸻
-
-2. Asset Classification Levels
-
-The organisation uses four classification levels.
-
-2.1 Public
-
-Information approved for public distribution.
-
-Example: Company website content.
-
-2.2 Internal
-
-Information intended for employees and authorised personnel.
-
-Example: Internal business communications.
-
-2.3 Confidential
-
-Sensitive business or client information requiring restricted access.
-
-Example: Employee records and source code.
-
-2.4 Restricted
-
-Highly sensitive information requiring strict access controls.
-
-Example: Client databases and financial records.
-
-⸻
-
-3. Asset Inventory
-
-Asset A01 — Client Database
-
-* Category: Data
-* Owner: IT Manager
-* Classification: Restricted
-* Description: Stores client information, contact details and business records.
-
-Asset A02 — Employee Records
-
-* Category: Data
-* Owner: HR Manager
-* Classification: Confidential
-* Description: Contains employee personal information and employment records.
-
-Asset A03 — Source Code Repository
-
-* Category: Application / Data
-* Owner: Development Manager
-* Classification: Confidential
-* Description: Stores application source code and development projects.
-
-Asset A04 — Cloud Storage
-
-* Category: Infrastructure
-* Owner: IT Manager
-* Classification: Restricted
-* Description: Stores organisational documents, business data and project files.
-
-Asset A05 — Corporate Email
-
-* Category: Application
-* Owner: IT Manager
-* Classification: Internal
-* Description: Used for internal communication and external business correspondence.
-
-Asset A06 — Financial Records
-
-* Category: Data
-* Owner: Finance Manager
-* Classification: Restricted
-* Description: Contains invoices, payment records and financial information.
-
-Asset A07 — Employee Laptops
-
-* Category: Hardware
-* Owner: IT Manager
-* Classification: Internal
-* Description: Devices used by employees for daily business operations.
-
-Asset A08 — Network Infrastructure
-
-* Category: Infrastructure
-* Owner: IT Manager
-* Classification: Internal
-* Description: Includes routers, switches and network connectivity equipment.
-
-Asset A09 — Company Website
-
-* Category: Application
-* Owner: Marketing Manager
-* Classification: Public
-* Description: Public-facing website providing company and service information.
-
-Asset A10 — Backup Systems
-
-* Category: Infrastructure / Data
-* Owner: IT Manager
-* Classification: Restricted
-* Description: Stores backup copies of critical organisational information.
-
-⸻
-
-4. CIA Security Assessment
-
-The CIA Triad evaluates the security requirements of each asset.
-
-4.1 Confidentiality
-
-Protects information against unauthorised access or disclosure.
-
-4.2 Integrity
-
-Protects information against unauthorised modification or destruction.
-
-4.3 Availability
-
-Ensures information and systems remain accessible when required.
-
-4.4 Initial CIA Assessment
-
-AssetID	  Confidentiality	   Integrity    Availability
-A01	      High	             High	        High
-A02	      High	             High	        Medium
-A03	      High	             High	        High
-A04	      High	             High	        High
-A05	      Medium	           High	        High
-A06	      High	             High	        High
-A07	      Medium	           Medium	      High
-A08	      Medium	           High	        High
-A09	      Low	               Medium	      High
-A10	      High	             High	        High
-
-Note: CIA ratings represent preliminary qualitative assumptions for this simulated assessment.
-
-⸻
-
-5. High-Priority Assets
-
-Based on the initial assessment, the following assets require particular attention:
-
-A01 — Client Database
-
-* Contains sensitive client information.
-* Unauthorised disclosure could cause financial and reputational damage.
-
-A04 — Cloud Storage
-
-* Supports storage and access to business information.
-* Misconfiguration or unauthorised access could expose multiple data categories.
-
-A06 — Financial Records
-
-* Contains sensitive financial information.
-* Unauthorised modification could result in financial losses.
-
-A10 — Backup Systems
-
-* Supports business continuity and recovery.
-* Compromised backups could prevent effective recovery after an incident.
-
-⸻
-
-6. Key Observations
-
-1. Sensitive client and employee information requires appropriate access restrictions.
-2. Source code requires protection against unauthorised access and modification.
+---
+
+## 2. Classification Levels
+
+| Level | Description | Example |
+|---|---|---|
+| Public | Approved for public distribution | Company website content |
+| Internal | Intended for employees and authorised personnel | Internal business communications |
+| Confidential | Sensitive business or personal information requiring restricted access | Employee records, source code |
+| Restricted | Highest sensitivity; strict access controls required | Client databases, financial records |
+
+---
+
+## 3. Asset Inventory
+
+| ID | Asset | Category | Owner | Classification | Description |
+|---|---|---|---|---|---|
+| A01 | Client Database | Data | IT Manager | Restricted | Client information, contact details and business records |
+| A02 | Employee Records | Data | HR Manager | Confidential | Employee personal information and employment records |
+| A03 | Source Code Repository | Application / Data | Development Manager | Confidential | Application source code and development projects |
+| A04 | Cloud Storage | Infrastructure | IT Manager | Restricted | Organisational documents, business data and project files |
+| A05 | Corporate Email | Application | IT Manager | Internal | Internal communication and external business correspondence |
+| A06 | Financial Records | Data | Finance Manager | Restricted | Invoices, payment records and financial information |
+| A07 | Employee Laptops | Hardware | IT Manager | Internal | Devices used for daily business operations |
+| A08 | Network Infrastructure | Infrastructure | IT Manager | Internal | Routers, switches and connectivity equipment |
+| A09 | Company Website | Application | Marketing Manager | Public | Public-facing website with company and service information |
+| A10 | Backup Systems | Infrastructure / Data | IT Manager | Restricted | Backup copies of critical organisational information |
+
+---
+
+## 4. CIA Security Assessment
+
+### 4.1 Rating key
+
+| Rating | Meaning |
+|---|---|
+| High | Compromise would cause severe financial, legal, operational or reputational harm |
+| Medium | Compromise would cause noticeable but manageable harm |
+| Low | Compromise would cause minimal harm |
+
+- **Confidentiality** — protection against unauthorised disclosure
+- **Integrity** — protection against unauthorised modification or destruction
+- **Availability** — information and systems are accessible when required
+
+### 4.2 Initial CIA ratings
+
+| ID | Asset | Confidentiality | Integrity | Availability |
+|---|---|---|---|---|
+| A01 | Client Database | High | High | High |
+| A02 | Employee Records | High | High | Medium |
+| A03 | Source Code Repository | High | High | High |
+| A04 | Cloud Storage | High | High | High |
+| A05 | Corporate Email | Medium | High | High |
+| A06 | Financial Records | High | High | High |
+| A07 | Employee Laptops | Medium | Medium | High |
+| A08 | Network Infrastructure | Medium | High | High |
+| A09 | Company Website | Low | Medium | High |
+| A10 | Backup Systems | High | High | High |
+
+CIA ratings are preliminary qualitative assumptions for this simulated assessment.
+
+---
+
+## 5. High-Priority Assets
+
+**Rule:** an asset is high-priority when all three CIA ratings are High.
+
+| ID | Asset | Why it matters |
+|---|---|---|
+| A01 | Client Database | Unauthorised disclosure or loss would cause financial and reputational damage |
+| A03 | Source Code Repository | Core intellectual property; tampering could affect all delivered software |
+| A04 | Cloud Storage | Misconfiguration could expose several data categories at once |
+| A06 | Financial Records | Modification or disclosure could cause financial loss and fraud |
+| A10 | Backup Systems | If compromised, recovery after an incident may not be possible |
+
+---
+
+## 6. Asset-to-Risk Linkage
+
+Every asset is covered by at least one risk in `04_risk_assessment.md`.
+
+| ID | Asset | Related risks |
+|---|---|---|
+| A01 | Client Database | R02, R03 |
+| A02 | Employee Records | R03 |
+| A03 | Source Code Repository | R08 |
+| A04 | Cloud Storage | R04 |
+| A05 | Corporate Email | R01 |
+| A06 | Financial Records | R09 |
+| A07 | Employee Laptops | R05 |
+| A08 | Network Infrastructure | R06 (supporting asset) |
+| A09 | Company Website | R06 |
+| A10 | Backup Systems | R07 |
+
+---
+
+## 7. Key Observations
+
+1. Client, employee and financial information needs strict access restrictions.
+2. Source code needs protection against unauthorised access and modification.
 3. Cloud infrastructure needs secure configuration and access management.
 4. Backup systems are essential for business continuity.
-5. Employee devices represent potential entry points for cyberattacks.
+5. Employee devices and email are likely entry points for cyberattacks.
 
-⸻
+---
 
-7. Assessment Conclusion
+## 8. Conclusion
 
-The initial asset inventory identifies ten important assets supporting Nexora Solutions’ operations.
+Ten information assets support Nexora's operations; five of them are high-priority. The classification and CIA ratings provide the basis for the threat and vulnerability assessment.
 
-The classification and CIA assessments provide a foundation for identifying potential threats, vulnerabilities and associated cybersecurity risks.
+Asset ownership and criticality would need validation with real asset owners in a live assessment.
 
-Further validation of asset ownership, business criticality and security requirements would be necessary in a real organisational assessment.
+---
 
-⸻
-
-Project: Cybersecurity Risk Assessment & ISO 27001 Case Study
-Organisation: Nexora Solutions Pvt. Ltd.
-Document: 02 — Asset Identification & Classification
-Status: Completed
+**Project:** Cybersecurity Risk Assessment & ISO 27001 Case Study
+**Document:** 02 — Asset Identification and Classification
+**Status:** Completed — Simulated
