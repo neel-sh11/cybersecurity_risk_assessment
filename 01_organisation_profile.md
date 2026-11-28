@@ -1,79 +1,147 @@
-Organisation Profile & Assessment Scope
+# 01 — Organisation Profile and Assessment Scope
 
-1. Organisation Overview
+| Field | Details |
+|---|---|
+| Organisation | Nexora Solutions Pvt. Ltd. (fictional) |
+| Project | Cybersecurity Risk Assessment & ISO/IEC 27001:2022 GRC Case Study |
+| Document | 01 — Organisation Profile and Assessment Scope |
+| Framework | ISO/IEC 27001:2022 |
+| Version | 2.0 |
+| Status | Final — Simulated Assessment |
 
-Organisation: Nexora Solutions Pvt. Ltd.
-Industry: Information Technology Services
-Location: Ahmedabad, Gujarat, India
-Employees: 85
-Business Type: Software Development and IT Support
+---
 
-Nexora Solutions Pvt. Ltd. is a fictional IT services company providing software development, technical support and IT consulting services to domestic and international clients.
+## 1. Organisation Overview
 
-The organisation relies on cloud-based infrastructure, digital communication platforms and internal business applications to manage its daily operations.
+| Attribute | Details |
+|---|---|
+| Organisation | Nexora Solutions Pvt. Ltd. |
+| Industry | Information Technology Services |
+| Business type | Software development and IT support |
+| Location | Ahmedabad, Gujarat, India |
+| Employees | 85 |
 
-2. Information Assets
+Nexora Solutions Pvt. Ltd. is a **fictional** IT services company that provides software development, technical support and IT consulting to domestic and international clients.
 
-The organisation handles several categories of information:
+The organisation relies on cloud-based infrastructure, digital communication platforms and internal business applications to run its daily operations.
 
-* Client information and business records
-* Employee personal information
-* Internal financial records
-* Software source code and development projects
-* Business communications
-* Authentication credentials and access information
+---
 
-3. Existing IT Environment
+## 2. Information Assets
+
+The organisation handles the following categories of information:
+
+- Client information and business records
+- Employee personal information
+- Internal financial records
+- Software source code and development projects
+- Business communications
+- Authentication credentials and access information
+
+Detailed asset records are in `02_asset_inventory.md`.
+
+---
+
+## 3. Existing IT Environment
 
 The organisation uses:
 
-* Cloud-based storage and computing services
-* Employee laptops and desktop computers
-* Corporate email systems
-* Internal business applications
-* Internet-connected network infrastructure
-* Remote access for selected employees
+- Cloud-based storage and computing services
+- Employee laptops and desktop computers
+- Corporate email systems
+- Internal business applications
+- Internet-connected network infrastructure
+- Remote access for selected employees
 
-4. Assessment Purpose
+**Assumption:** No security control is assumed to be verified in place. The initial risk ratings therefore reflect risk *before proposed treatment* (see `10_methodology_and_references.md`).
 
-The purpose of this cybersecurity risk assessment is to:
+---
+
+## 4. Interested Parties and Security Requirements
+
+| Interested party | Expectation (illustrative) |
+|---|---|
+| Clients | Confidentiality and integrity of their data; reliable service delivery |
+| Employees | Protection of personal information |
+| Senior management | Business continuity, reputation and cost-effective security |
+| Regulators and authorities | Lawful handling of personal data |
+
+Illustrative legal and contractual context (not assessed for compliance in this case study):
+
+- Client contracts and non-disclosure agreements
+- Information Technology Act, 2000 (India)
+- Digital Personal Data Protection Act, 2023 (India)
+
+---
+
+## 5. Proposed Security Roles
+
+These roles are **proposed assignments** for the simulated organisation, not verified appointments.
+
+| Role | Proposed responsibility |
+|---|---|
+| Senior Management | Approve risk treatment, allocate resources, accept or reject risks |
+| IT Manager | Technical controls, access, patching, backup, monitoring |
+| Security Officer (proposed role) | Coordinate the ISMS, incident response and control reviews |
+| HR Manager | Awareness training, onboarding and offboarding |
+| Development Manager | Source code protection and secure development practices |
+| Finance Manager | Protection of financial records |
+| Marketing Manager | Owner of the public website content |
+
+---
+
+## 6. Assessment Purpose
+
+The purpose of this assessment is to:
 
 1. Identify critical information assets.
 2. Identify potential threats and vulnerabilities.
-3. Evaluate cybersecurity risks based on likelihood and impact.
+3. Evaluate cybersecurity risks by likelihood and impact.
 4. Recommend appropriate security controls.
-5. Map relevant controls to ISO/IEC 27001:2022.
+5. Map relevant controls to ISO/IEC 27001:2022 Annex A.
 6. Develop risk treatment recommendations.
+7. Define how residual risk will be reassessed.
 
-5. Assessment Scope
+---
 
-This assessment covers:
+## 7. Assessment Scope
 
-* Information assets and business data
-* Employee access and authentication
-* Network and endpoint security
-* Cloud infrastructure
-* Data protection and backup practices
-* Incident response procedures
-* Third-party and vendor-related risks
+**In scope**
 
-Exclusions: Physical facility security and detailed penetration testing are outside the scope of this case study.
+- Information assets and business data
+- Employee access and authentication
+- Network and endpoint security
+- Cloud infrastructure
+- Data protection and backup practices
+- Incident response capability
 
-6. Assessment Limitations
+**Out of scope**
 
-This is a simulated assessment based on a fictional organisation. No actual company infrastructure, confidential information or security configurations have been accessed.
+- Physical facility security (Annex A.7 controls are listed in the Statement of Applicability as *not assessed*)
+- Detailed penetration testing or vulnerability scanning
+- Third-party and supplier risk (recognised as relevant, but not risk-assessed in this version)
 
-All identified risks and proposed controls are hypothetical and intended for educational purposes.
+---
 
-7. Assessment Framework
+## 8. Assessment Limitations
 
-The assessment will reference:
+- This is a **simulated** assessment of a **fictional** organisation.
+- No real infrastructure, confidential information or security configuration was accessed.
+- All identified risks, ratings and controls are hypothetical and for educational purposes.
+- It is not an ISO/IEC 27001 certification audit.
 
-* ISO/IEC 27001:2022 — Information Security Management Systems
-* ISO/IEC 27005 — Information Security Risk Management
-* Risk-based assessment and treatment principles
+---
 
-⸻
+## 9. Assessment Framework
 
-Project Status: Organisation profile established
-Assessment Type: Simulated Cybersecurity Risk Assessment
+- ISO/IEC 27001:2022 — Information Security Management Systems
+- ISO/IEC 27002:2022 — Information Security Controls
+- ISO/IEC 27005:2022 — Information Security Risk Management
+- ISO 31000:2018 — Risk Management Guidelines
+- NIST Cybersecurity Framework 2.0 (supporting reference)
+
+---
+
+**Project status:** Organisation profile established
+**Assessment type:** Simulated Cybersecurity Risk Assessment
+**Next document:** `02_asset_inventory.md`
