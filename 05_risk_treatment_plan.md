@@ -1,417 +1,248 @@
-05 — Risk Treatment Plan & Security Controls
+# 05 — Risk Treatment Plan and Security Controls
 
-Organisation: Nexora Solutions Pvt. Ltd.
-Assessment Type: Simulated Cybersecurity Risk Assessment
-Framework: ISO/IEC 27001:2022
-Document Status: Proposed Risk Treatment Plan
+| Field | Details |
+|---|---|
+| Organisation | Nexora Solutions Pvt. Ltd. (fictional) |
+| Document | 05 — Risk Treatment Plan and Security Controls |
+| Framework | ISO/IEC 27001:2022 |
+| Version | 2.0 |
+| Status | Proposed — Not Yet Implemented |
 
-⸻
+---
 
-1. Objective
+## 1. Objective
 
-The purpose of this document is to define appropriate treatment strategies and security controls for the cybersecurity risks identified during the risk assessment.
+Define treatment strategies and security controls for the nine risks identified in `04_risk_assessment.md`.
 
-The treatment plan aims to reduce the likelihood and/or impact of identified risks through appropriate organisational, people and technological security measures.
+The plan proposes security improvements, the relevant ISO/IEC 27001:2022 Annex A controls, responsible roles and implementation priorities. Nothing in this document confirms that a control exists.
 
-This document establishes proposed security improvements, relevant ISO/IEC 27001:2022 Annex A control references, preliminary responsibilities and implementation priorities.
+---
 
-2. Risk Treatment Strategies
+## 2. Risk Treatment Options
 
-The organisation considers four primary risk treatment strategies.
+| Option | Meaning | Example |
+|---|---|---|
+| Avoid | Stop the activity that creates unacceptable risk | Retire an insecure application that cannot be protected |
+| Mitigate | Reduce likelihood and/or impact with controls | Enforce multi-factor authentication |
+| Transfer or share | Share the financial or operational consequences | Cyber insurance |
+| Accept | Formally retain a risk within approved tolerance | Accept a low-impact risk with management approval |
 
-2.1 Risk Avoidance
+---
 
-Eliminating activities or processes that create unacceptable risks.
+## 3. Treatment Approach
 
-Example: Discontinuing an insecure application that cannot be adequately protected.
+All nine risks are assigned **Mitigate** as the primary strategy. For R02 (ransomware), **Transfer** (cyber insurance) is noted as a possible secondary option, to be decided by senior management.
 
-2.2 Risk Mitigation
+The plan focuses on:
 
-Implementing security controls to reduce the likelihood or impact of a risk.
+- Strengthening identity and access management
+- Improving email security and employee awareness
+- Formal vulnerability and patch management
+- Improved backup and recovery
+- Stronger cloud security configuration
+- Network monitoring and protection
+- Business continuity and incident response
 
-Example: Implementing Multi-Factor Authentication (MFA) to reduce the possibility of unauthorised account access.
+---
 
-2.3 Risk Transfer or Sharing
+## 4. Proposed Treatment by Risk
 
-Sharing certain financial or operational consequences of a risk with another party.
+### R01 — Phishing and Account Compromise
+**Initial score:** 20 (Critical) · **Strategy:** Mitigate · **Owner:** IT Manager
 
-Example: Purchasing cyber insurance to help manage eligible financial losses.
-
-2.4 Risk Acceptance
-
-Formally acknowledging a risk and deciding to retain it within the organisation’s approved risk tolerance.
-
-Example: Accepting a low-impact risk with appropriate management approval and monitoring.
-
-3. Risk Treatment Approach
-
-Nexora Solutions will primarily use risk mitigation to address its identified Critical, High and Moderate risks.
-
-All seven identified risks have been assigned a mitigation strategy based on their potential business impact and security requirements.
-
-The proposed treatment approach focuses on:
-
-* Strengthening identity and access management.
-* Improving email security and employee awareness.
-* Implementing formal vulnerability and patch management.
-* Improving backup and recovery procedures.
-* Strengthening cloud security configurations.
-* Improving network monitoring and protection.
-* Establishing appropriate business continuity measures.
-
-The proposed controls will require management approval, resource allocation and implementation verification.
-
-⸻
-
-4. Proposed Security Controls
-
-The following sections define the proposed treatment actions and relevant ISO/IEC 27001:2022 Annex A controls for each identified risk.
-
-R01 — Phishing and Account Compromise
-
-Initial Risk Score: 20
-Initial Risk Rating: Critical
-Treatment Strategy: Mitigate
-
-Risk Treatment Actions:
-
-1. Conduct regular employee phishing awareness and security training.
-2. Implement Multi-Factor Authentication (MFA) for organisational user accounts.
+Actions:
+1. Run regular phishing awareness and security training.
+2. Enforce multi-factor authentication (MFA) on organisational accounts.
 3. Configure email filtering and malicious attachment protection.
-4. Conduct periodic phishing simulation exercises.
-5. Establish procedures for reporting suspicious emails and suspected account compromise.
+4. Filter access to malicious websites.
+5. Run periodic phishing simulations.
+6. Set up a procedure to report suspicious emails and suspected account compromise.
 
-Relevant ISO/IEC 27001:2022 Controls:
+Annex A controls: A.5.17, A.6.3, A.8.5, A.8.7, A.8.16, A.8.23
+Responsible: IT Manager, HR Manager
 
-* A.6.3 — Information security awareness, education and training.
-* A.8.5 — Secure authentication.
-* A.5.17 — Authentication information.
-* A.8.7 — Protection against malware.
-* A.8.23 — Web filtering.
-* A.5.24 — Information security incident management planning and preparation.
-* A.8.16 — Monitoring activities.
+### R02 — Ransomware Infection
+**Initial score:** 20 (Critical) · **Strategy:** Mitigate (secondary option: Transfer) · **Owner:** IT Manager
 
-Responsible Departments: IT and HR
+Actions:
+1. Apply security updates through formal patch management.
+2. Keep secure, isolated backups of critical information.
+3. Test data restoration periodically.
+4. Deploy endpoint malware protection.
+5. Restrict installation of unapproved software.
+6. Monitor for suspicious activity and malware behaviour.
+7. Prepare a ransomware incident response procedure.
 
-R02 — Ransomware Infection
+Annex A controls: A.5.30, A.6.3, A.8.7, A.8.8, A.8.13, A.8.16, A.8.19
+Responsible: IT Manager
 
-Initial Risk Score: 20
-Initial Risk Rating: Critical
-Treatment Strategy: Mitigate
+### R03 — Insider Data Misuse
+**Initial score:** 15 (High) · **Strategy:** Mitigate · **Owner:** IT Manager
 
-Risk Treatment Actions:
+Actions:
+1. Apply least privilege to accounts.
+2. Review access permissions periodically.
+3. Restrict access to sensitive client and employee data by job role.
+4. Monitor privileged activity and access to critical information.
+5. Remove or change access promptly when staff leave or change roles.
+6. Establish formal access approval.
+7. Train staff on data handling.
 
-1. Implement regular security updates and formal patch management.
-2. Maintain secure and isolated backups of critical organisational information.
-3. Conduct periodic data restoration and backup recovery tests.
-4. Implement endpoint malware protection across organisational devices.
-5. Monitor suspicious system activities and potential malware behaviour.
-6. Establish an incident response procedure for ransomware-related incidents.
+Annex A controls: A.5.15, A.5.18, A.6.3, A.8.2, A.8.3, A.8.16
+Responsible: IT Manager, HR Manager
 
-Relevant ISO/IEC 27001:2022 Controls:
+### R04 — Cloud Data Exposure
+**Initial score:** 15 (High) · **Strategy:** Mitigate · **Owner:** IT Manager
 
-* A.8.7 — Protection against malware.
-* A.8.8 — Management of technical vulnerabilities.
-* A.8.13 — Information backup.
-* A.8.16 — Monitoring activities.
-* A.5.24 — Information security incident management planning and preparation.
-* A.5.30 — ICT readiness for business continuity.
-
-Responsible Department: IT Department
-
-R03 — Insider Data Misuse
-
-Initial Risk Score: 15
-Initial Risk Rating: High
-Treatment Strategy: Mitigate
-
-Risk Treatment Actions:
-
-1. Apply the principle of least privilege to organisational accounts.
-2. Review user access permissions periodically.
-3. Restrict access to sensitive client information based on job responsibilities.
-4. Monitor privileged user activities and access to critical information.
-5. Remove or modify access permissions promptly when employees leave the organisation or change roles.
-6. Establish formal access approval procedures.
-
-Relevant ISO/IEC 27001:2022 Controls:
-
-* A.5.15 — Access control.
-* A.5.18 — Access rights.
-* A.8.2 — Privileged access rights.
-* A.8.3 — Information access restriction.
-* A.8.16 — Monitoring activities.
-  
-Responsible Departments: IT and HR
-
-R04 — Cloud Data Exposure
-
-Initial Risk Score: 15
-Initial Risk Rating: High
-Treatment Strategy: Mitigate
-
-Risk Treatment Actions:
-
+Actions:
 1. Review cloud storage permissions regularly.
-2. Restrict public access to sensitive cloud storage resources.
-3. Implement strong authentication for cloud accounts.
+2. Block public access to sensitive cloud storage.
+3. Require strong authentication, including MFA, for cloud accounts.
 4. Monitor cloud configuration changes and unauthorised access attempts.
-5. Apply appropriate encryption to sensitive organisational information.
-6. Establish procedures for reviewing cloud security configurations.
+5. Encrypt sensitive information.
+6. Establish a cloud configuration review procedure.
 
-Relevant ISO/IEC 27001:2022 Controls:
+Annex A controls: A.5.15, A.5.23, A.8.5, A.8.9, A.8.16, A.8.24
+Responsible: IT Manager
 
-* A.5.23 — Information security for use of cloud services.
-* A.5.15 — Access control.
-* A.8.9 — Configuration management.
-* A.8.24 — Use of cryptography.
-* A.8.5 — Secure authentication.
-* A.8.16 — Monitoring activities.
+### R05 — Exploitation of Unpatched Software
+**Initial score:** 16 (High) · **Strategy:** Mitigate · **Owner:** IT Manager
 
-Responsible Department: IT Department
-
-R05 — Exploitation of Unpatched Software
-
-Initial Risk Score: 16
-Initial Risk Rating: High
-Treatment Strategy: Mitigate
-
-Risk Treatment Actions:
-
+Actions:
 1. Establish a formal vulnerability and patch management process.
-2. Maintain an updated inventory of organisational software and systems.
-3. Prioritise security updates based on vulnerability severity and potential business impact.
-4. Conduct periodic vulnerability assessments.
-5. Verify that critical security updates have been successfully installed.
-6. Document identified vulnerabilities, remediation activities and outstanding issues.
+2. Maintain an inventory of software and systems.
+3. Prioritise updates by severity and business impact.
+4. Run periodic vulnerability assessments.
+5. Verify that critical updates are installed.
+6. Document vulnerabilities, remediation and outstanding issues.
 
-Relevant ISO/IEC 27001:2022 Controls:
+Annex A controls: A.8.8, A.8.9, A.8.19
+Responsible: IT Manager (supported by the Development Manager)
 
+### R06 — DDoS Service Disruption
+**Initial score:** 9 (Moderate) · **Strategy:** Mitigate · **Owner:** IT Manager
 
-Relevant ISO/IEC 27001:2022 Controls:
+Actions:
+1. Use DDoS protection services for the public website.
+2. Monitor unusual network traffic.
+3. Review network security configuration periodically.
+4. Assess service capacity and availability needs.
+5. Prepare a website disruption response procedure.
+6. Coordinate with service providers during incidents.
 
-* A.6.3 — Information security awareness, education and training.
-* A.5.17 — Authentication information.
-* A.8.5 — Secure authentication.
-* A.8.7 — Protection against malware.
-* A.8.23 — Web filtering.
-* A.8.8 — Management of technical vulnerabilities.
-* A.8.9 — Configuration management.
-* A.8.19 — Installation of software on operational systems.
- 
-Responsible Department: IT Department
+Annex A controls: A.8.6, A.8.16, A.8.20, A.8.21
+Responsible: IT Manager, Network Administrator
 
-R06 — DDoS Service Disruption
+### R07 — Hardware Failure and Data Loss
+**Initial score:** 12 (High) · **Strategy:** Mitigate · **Owner:** IT Manager
 
-Initial Risk Score: 9
-Initial Risk Rating: Moderate
-Treatment Strategy: Mitigate
-
-Risk Treatment Actions:
-
-1. Implement appropriate Distributed Denial of Service (DDoS) protection services.
-2. Monitor unusual network traffic and potential traffic-based attacks.
-3. Review network security configurations periodically.
-4. Evaluate service capacity and availability requirements.
-5. Establish procedures for responding to website and service disruptions.
-6. Coordinate with relevant service providers for incident mitigation where required.
-
-Relevant ISO/IEC 27001:2022 Controls:
-
-* A.8.6 — Capacity management.
-* A.8.20 — Network security.
-* A.8.21 — Security of network services.
-* A.8.16 — Monitoring activities. 
-
-Responsible Department: IT Department
-
-R07 — Hardware Failure and Data Loss
-
-Initial Risk Score: 12
-Initial Risk Rating: High
-Treatment Strategy: Mitigate
-
-Risk Treatment Actions:
-
-1. Schedule regular backups of critical organisational information.
-2. Maintain separate backup copies to reduce dependence on primary systems.
-3. Conduct periodic data restoration and recovery tests.
-4. Monitor hardware health and identify potential equipment failures.
+Actions:
+1. Schedule regular backups of critical information.
+2. Keep separate backup copies.
+3. Test restoration and recovery periodically.
+4. Monitor hardware health.
 5. Establish business continuity and disaster recovery procedures.
-6. Evaluate redundancy options for critical information processing infrastructure.
+6. Evaluate redundancy for critical infrastructure.
 
-  ### Cross-Cutting Incident Management Control
+Annex A controls: A.5.30, A.8.13, A.8.14
+Responsible: IT Manager
 
-A.5.24 — Information security incident management planning and preparation is a cross-cutting control relevant to all seven identified risks.
+### R08 — Source Code Compromise
+**Initial score:** 12 (High) · **Strategy:** Mitigate · **Owner:** Development Manager
 
-The organisation should establish incident reporting, escalation, response and documentation procedures that can support the management of different security incidents. 
+Actions:
+1. Restrict repository access by role.
+2. Enforce MFA on repository accounts.
+3. Require branch protection and peer review for changes.
+4. Limit and review administrator rights.
+5. Back up repositories and test restoration.
+6. Monitor repository access and changes.
 
-Relevant ISO/IEC 27001:2022 Controls:
+Annex A controls: A.5.15, A.5.18, A.8.2, A.8.4, A.8.5, A.8.13, A.8.16
+Responsible: Development Manager, IT Manager
 
-* A.8.13 — Information backup.
-* A.8.14 — Redundancy of information processing facilities.
-* A.5.30 — ICT readiness for business continuity.
+### R09 — Financial Records Compromise or Tampering
+**Initial score:** 12 (High) · **Strategy:** Mitigate · **Owner:** Finance Manager
 
-Responsible Department: IT Department
+Actions:
+1. Restrict finance system access by role.
+2. Enforce MFA on finance accounts.
+3. Review finance permissions when roles change.
+4. Back up financial records and test restoration.
+5. Monitor access to financial records.
 
-⸻
+Annex A controls: A.5.15, A.5.18, A.8.3, A.8.5, A.8.13, A.8.16
+Responsible: Finance Manager, IT Manager
 
-5. Risk Treatment Summary
+### Cross-cutting control — A.5.24
 
-The following summary presents the selected treatment strategy for all seven identified risks.
+**A.5.24 — Information security incident management planning and preparation** applies to all nine risks. Nexora should define incident reporting, escalation, response and documentation procedures that support any type of incident.
 
-R01 — Phishing and Account Compromise
+---
 
-* Initial Score: 20
-* Initial Rating: Critical
-* Treatment: Mitigate
+## 5. Risk Treatment Summary
 
-R02 — Ransomware Infection
+| ID | Risk | Initial score | Rating | Strategy | Annex A controls (plus A.5.24) |
+|---|---|---|---|---|---|
+| R01 | Phishing and Account Compromise | 20 | Critical | Mitigate | A.5.17, A.6.3, A.8.5, A.8.7, A.8.16, A.8.23 |
+| R02 | Ransomware Infection | 20 | Critical | Mitigate | A.5.30, A.6.3, A.8.7, A.8.8, A.8.13, A.8.16, A.8.19 |
+| R03 | Insider Data Misuse | 15 | High | Mitigate | A.5.15, A.5.18, A.6.3, A.8.2, A.8.3, A.8.16 |
+| R04 | Cloud Data Exposure | 15 | High | Mitigate | A.5.15, A.5.23, A.8.5, A.8.9, A.8.16, A.8.24 |
+| R05 | Exploitation of Unpatched Software | 16 | High | Mitigate | A.8.8, A.8.9, A.8.19 |
+| R06 | DDoS Service Disruption | 9 | Moderate | Mitigate | A.8.6, A.8.16, A.8.20, A.8.21 |
+| R07 | Hardware Failure and Data Loss | 12 | High | Mitigate | A.5.30, A.8.13, A.8.14 |
+| R08 | Source Code Compromise | 12 | High | Mitigate | A.5.15, A.5.18, A.8.2, A.8.4, A.8.5, A.8.13, A.8.16 |
+| R09 | Financial Records Compromise or Tampering | 12 | High | Mitigate | A.5.15, A.5.18, A.8.3, A.8.5, A.8.13, A.8.16 |
 
-* Initial Score: 20
-* Initial Rating: Critical
-* Treatment: Mitigate
+Together these use **23 distinct Annex A controls**. Initial ratings remain unchanged until implementation and effectiveness have been evaluated.
 
-R03 — Insider Data Misuse
+---
 
-* Initial Score: 15
-* Initial Rating: High
-* Treatment: Mitigate
+## 6. Proposed Responsibilities
 
-R04 — Cloud Data Exposure
+These are proposed assignments, not verified appointments.
 
-* Initial Score: 15
-* Initial Rating: High
-* Treatment: Mitigate
+| Role | Proposed responsibility |
+|---|---|
+| IT Manager | Technical security improvements, access, patching, backup and recovery, infrastructure monitoring |
+| Security Officer (proposed) | Coordinate the ISMS, incident response and control reviews |
+| HR Manager | Security awareness training, onboarding and offboarding |
+| Development Manager | Source code protection and vulnerability remediation in software |
+| Finance Manager | Access and review for financial records |
+| Senior Management | Approve treatment, allocate resources, review high residual risks, approve risk acceptance |
 
-R05 — Exploitation of Unpatched Software
+---
 
-* Initial Score: 16
-* Initial Rating: High
-* Treatment: Mitigate
+## 7. Implementation Phases
 
-R06 — DDoS Service Disruption
+Timeframes are **indicative planning assumptions**, not confirmed dates.
 
-* Initial Score: 9
-* Initial Rating: Moderate
-* Treatment: Mitigate
+| Phase | Indicative timeframe | Focus | Controls |
+|---|---|---|---|
+| 1 — Immediate priorities | 0–3 months | Authentication, email and web protection, backups, cloud permissions, privileged access, incident plan | A.5.17, A.5.23, A.5.24, A.8.2, A.8.5, A.8.7, A.8.13, A.8.23 |
+| 2 — Security improvements | 3–6 months | Patching, access control, monitoring, network, training, continuity, encryption | A.5.15, A.5.18, A.5.30, A.6.3, A.8.3, A.8.4, A.8.8, A.8.9, A.8.16, A.8.19, A.8.20, A.8.21, A.8.24 |
+| 3 — Continuous improvement | 6–12 months | Capacity, redundancy, periodic testing and reassessment | A.8.6, A.8.14 |
 
-R07 — Hardware Failure and Data Loss
+Phase 3 also covers periodic vulnerability assessments, incident response and recovery tests, control effectiveness reviews and risk reassessment.
 
-* Initial Score: 12
-* Initial Rating: High
-* Treatment: Mitigate
+---
 
-All seven risks have been assigned a mitigation strategy. The initial risk ratings remain unchanged until treatment implementation and effectiveness have been evaluated.
+## 8. Residual Risk Considerations
 
-⸻
+- A risk is **not** reduced merely because a control has been proposed.
+- Residual ratings are assigned only after implementation evidence and effectiveness testing.
+- Risks accepted by management need formal approval.
+- Planned target residual levels are in `08_residual_risk_assessment.md` and are clearly marked as targets, not results.
 
-6. Implementation Responsibilities
+---
 
-The following responsibilities are proposed for coordinating and overseeing risk treatment activities.
+## 9. Assessment Conclusion
 
-IT Manager
+All nine risks have a treatment strategy, Annex A control references, owners and proposed priorities. The plan feeds the Statement of Applicability (`06`), the control implementation tracker (`07`) and the residual risk assessment (`08`).
 
-* Coordinate technical security improvements.
-* Manage access controls and patch management activities.
-* Oversee backup and recovery procedures.
-* Monitor infrastructure security.
-* Coordinate vulnerability remediation.
+---
 
-HR Manager
-
-* Coordinate employee security awareness training.
-* Support employee onboarding and offboarding procedures.
-* Assist with periodic employee security awareness activities.
-
-Development Manager
-
-* Support secure software development practices.
-* Coordinate software vulnerability remediation.
-* Assist with identifying and addressing software security weaknesses.
-
-Senior Management
-
-* Review and approve risk treatment decisions.
-* Allocate appropriate resources for security improvements.
-* Review significant residual risks.
-* Provide management approval for formally accepted risks.
-
-These responsibilities are proposed assignments and do not represent verified organisational appointments.
-
-⸻
-
-7. Implementation Phases
-
-The proposed implementation activities will be organised into three phases.
-
-Phase 1 — Immediate Priorities
-
-* Strengthen authentication mechanisms.
-* Improve email security and phishing protection.
-* Review critical cloud access permissions.
-* Establish secure backup practices.
-* Improve protection against ransomware.
-
-Phase 2 — Security Improvements
-
-* Establish formal patch management procedures.
-* Review user access privileges.
-* Improve network monitoring and protection.
-* Conduct employee security awareness training.
-* Implement vulnerability assessment procedures.
-
-Phase 3 — Continuous Improvement
-
-* Conduct periodic vulnerability assessments.
-* Test incident response and recovery procedures.
-* Review security control effectiveness.
-* Evaluate infrastructure redundancy.
-* Reassess remaining cybersecurity risks.
-
-The implementation phases represent proposed priorities rather than confirmed completion dates.
-
-⸻
-
-8. Residual Risk Considerations
-
-Residual risk refers to the level of risk remaining after security controls have been implemented and their effectiveness has been evaluated.
-
-The organisation should reassess each identified risk after implementing the proposed treatment actions.
-
-The reassessment should consider:
-
-* Whether the proposed controls have been implemented.
-* Whether implementation evidence is available.
-* Whether the controls operate effectively.
-* Whether the likelihood or impact of the risk has changed.
-* Whether the remaining risk is within the organisation’s acceptable risk tolerance.
-
-A risk must not be considered reduced merely because a security control has been proposed.
-
-Residual risk ratings should only be assigned after implementation evidence and control effectiveness have been evaluated.
-
-Formal management approval should be obtained for risks that are accepted.
-
-⸻
-
-9. Assessment Conclusion
-
-This risk treatment plan establishes proposed security actions for all seven cybersecurity risks identified during the assessment.
-
-Each risk has been assigned a mitigation strategy, relevant ISO/IEC 27001:2022 Annex A control references and preliminary implementation responsibilities.
-
-The proposed treatment activities focus on improving organisational security across identity and access management, malware protection, vulnerability management, cloud security, network protection, backup and business continuity.
-
-The treatment plan provides the foundation for the subsequent Statement of Applicability, control implementation tracking and residual risk assessment.
-
-The effectiveness of these proposed controls must be evaluated before any reduction in risk ratings can be justified.
-
-⸻
-
-Project: Cybersecurity Risk Assessment & ISO 27001 Case Study
-Organisation: Nexora Solutions Pvt. Ltd.
-Document: 05 — Risk Treatment Plan & Security Controls
-Status: Proposed — Not Yet Implemented
-
-Disclaimer: This is a simulated educational assessment. The proposed security controls and treatment activities have not been implemented or independently verified.
+**Project:** Cybersecurity Risk Assessment & ISO 27001 Case Study
+**Document:** 05 — Risk Treatment Plan and Security Controls
+**Status:** Proposed — Not Yet Implemented
+**Disclaimer:** This is a simulated educational assessment. The proposed controls have not been implemented or independently verified.
