@@ -1,356 +1,240 @@
-04 — Cybersecurity Risk Assessment
+# 04 — Cybersecurity Risk Assessment
 
-Organisation: Nexora Solutions Pvt. Ltd.
-Assessment Type: Simulated Cybersecurity Risk Assessment
-Framework Reference: ISO/IEC 27001:2022
-Document Status: Revised Initial Risk Evaluation
+| Field | Details |
+|---|---|
+| Organisation | Nexora Solutions Pvt. Ltd. (fictional) |
+| Document | 04 — Cybersecurity Risk Assessment |
+| Framework | ISO/IEC 27001:2022 (risk method informed by ISO/IEC 27005 and ISO 31000) |
+| Version | 2.0 |
+| Status | Final — Initial Risk Evaluation (Simulated) |
 
-⸻
+---
 
-1. Objective
+## 1. Objective
 
-The objective of this assessment is to identify, analyse and evaluate cybersecurity risks that could affect the organisation’s information assets, business operations and overall security posture.
+Identify, analyse and evaluate the cybersecurity risks that could affect Nexora's information assets and operations.
 
-The assessment uses the asset inventory and threat-vulnerability assessment as its foundation.
+The asset inventory (`02`) and the threat and vulnerability assessment (`03`) are the foundation. Each risk is rated on two factors:
 
-Each identified risk is evaluated using two factors:
+- **Likelihood** — how probable the event is
+- **Impact** — how severe the consequences would be
 
-* Likelihood: The estimated probability of a risk event occurring.
-* Impact: The potential severity of consequences if the risk event occurs.
+---
 
-The resulting risk scores help determine treatment priorities and support informed security decisions.
+## 2. Risk Assessment Methodology
 
-⸻
+A qualitative 5×5 matrix is used.
+
+**Risk Score = Likelihood × Impact**
 
-2. Risk Assessment Methodology
+### 2.1 Likelihood scale
 
-The organisation uses a qualitative 5×5 risk assessment matrix.
-
-The risk score is calculated using the following formula:
-
-Risk Score = Likelihood × Impact
-
-Both likelihood and impact are assigned values between 1 and 5.
-
-2.1 Likelihood Scale
-
-1 — Rare
-
-The event is highly unlikely to occur under normal circumstances.
-
-2 — Unlikely
-
-The event could occur but is not expected in most circumstances.
-
-3 — Possible
-
-The event could reasonably occur during normal business operations.
-
-4 — Likely
-
-The event is expected to occur under certain circumstances.
-
-5 — Almost Certain
-
-The event is highly probable or expected to occur frequently.
-
-2.2 Impact Scale
-
-1 — Insignificant
-
-Minimal disruption with negligible financial or operational consequences.
-
-2 — Minor
-
-Limited operational disruption with relatively small financial consequences.
-
-3 — Moderate
-
-Noticeable business disruption, service interruption or moderate financial consequences.
-
-4 — Major
-
-Serious operational disruption, significant financial loss or exposure of sensitive information.
-
-5 — Severe
-
-Critical business disruption, major financial loss, substantial data compromise or serious reputational damage.
-
-⸻
-
-3. Risk Rating Categories
-
-The calculated risk score determines the corresponding risk classification and treatment priority.
-
-Risk Score	Risk Rating	Treatment Priority
-1–4	Low	Routine Monitoring
-5–9	Moderate	Planned Improvement
-10–16	High	Priority Treatment
-17–25	Critical	Immediate Attention
-
-The classification provides a consistent approach for comparing and prioritising identified risks.
-
-⸻
-
-4. Inherent Risk Assessment
-
-Inherent risk represents the level of risk before considering the effectiveness of existing security controls.
-
-The following assessments are preliminary estimates based on the assumed operating environment of Nexora Solutions.
-
-R01 — Phishing and Account Compromise
-
-Affected Asset: A05 — Corporate Email
-
-Threat: T01 — Phishing
-
-Vulnerability: V03 — Poor Email Security
-
-Risk Description:
-
-An employee may interact with a fraudulent email containing malicious links or attachments, allowing attackers to steal credentials and gain unauthorised access to organisational accounts.
-
-Risk Evaluation:
-
-* Likelihood: 4 — Likely
-* Impact: 5 — Severe
-* Risk Score: 20
-* Risk Rating: Critical
-
-Treatment Priority: Immediate Attention
-
-R02 — Ransomware Infection
-
-Affected Asset: A01 — Client Database
-
-Threat: T02 — Ransomware
-
-Vulnerabilities:
-
-* V04 — Unpatched Systems
-* V06 — Inadequate Backup Practices
-
-Risk Description:
-
-Ransomware may exploit weaknesses in organisational systems and encrypt critical business information, disrupting operations and preventing access to important client records.
-
-Inadequate backup practices may further increase the impact by making data recovery difficult.
-
-Risk Evaluation:
-
-* Likelihood: 4 — Likely
-* Impact: 5 — Severe
-* Risk Score: 20
-* Risk Rating: Critical
-
-Treatment Priority: Immediate Attention
-
-R03 — Insider Data Misuse
-
-Affected Asset: A01 — Client Database
-
-Threat: T03 — Insider Threat
-
-Vulnerability: V05 — Excessive User Permissions
-
-Risk Description:
-
-An employee with excessive access privileges may intentionally or accidentally access, disclose or modify confidential client information beyond their authorised job responsibilities.
-
-Risk Evaluation:
-
-* Likelihood: 3 — Possible
-* Impact: 5 — Severe
-* Risk Score: 15
-* Risk Rating: High
-
-Treatment Priority: Priority Treatment
-
-R04 — Cloud Data Exposure
-
-Affected Asset: A04 — Cloud Storage
-
-Threat: T08 — Cloud Misconfiguration
-
-Vulnerability: V08 — Cloud Security Gaps
-
-Risk Description:
-
-Incorrect cloud storage permissions or insecure configurations may expose confidential organisational information to unauthorised individuals.
-
-Risk Evaluation:
-
-* Likelihood: 3 — Possible
-* Impact: 5 — Severe
-* Risk Score: 15
-* Risk Rating: High
-
-Treatment Priority: Priority Treatment
-
-R05 — Exploitation of Unpatched Software
-
-Affected Asset: A07 — Employee Laptops
-
-Threat: T09 — Exploitation of Known Software Vulnerabilities
-
-Vulnerability: V04 — Unpatched Systems
-
-Risk Description:
-
-Attackers may exploit known vulnerabilities in outdated operating systems or applications running on employee devices.
-
-Successful exploitation could allow unauthorised system access, malware installation, compromise of organisational resources or further attacks against internal systems.
-
-Risk Evaluation:
-
-* Likelihood: 4 — Likely
-* Impact: 4 — Major
-* Risk Score: 16
-* Risk Rating: High
-
-Treatment Priority: Priority Treatment
-
-R06 — DDoS Service Disruption
-
-Affected Asset: A09 — Company Website
-
-Threat: T05 — Distributed Denial of Service (DDoS)
-
-Vulnerability: V07 — Weak Network Security
-
-Risk Description:
-
-Attackers may overwhelm the company’s public website with excessive malicious network traffic, making online services unavailable to customers and visitors.
-
-Risk Evaluation:
-
-* Likelihood: 3 — Possible
-* Impact: 3 — Moderate
-* Risk Score: 9
-* Risk Rating: Moderate
-
-Treatment Priority: Planned Improvement
-
-R07 — Hardware Failure and Data Loss
-
-Affected Asset: A10 — Backup Systems
-
-Threat: T07 — Hardware Failure
-
-Vulnerability: V06 — Inadequate Backup Practices
-
-Risk Description:
-
-Hardware failure affecting backup infrastructure, combined with inadequate backup and recovery practices, may result in permanent data loss or prolonged service disruption.
-
-Risk Evaluation:
-
-* Likelihood: 3 — Possible
-* Impact: 4 — Major
-* Risk Score: 12
-* Risk Rating: High
-
-Treatment Priority: Priority Treatment
-
-⸻
-
-5. Risk Register Summary
-
-The following register provides a consolidated overview of the seven identified cybersecurity risks.
-
-Risk ID	Risk Description	Likelihood	Impact	Score	Rating
-R01	Phishing and Account Compromise	4	5	20	Critical
-R02	Ransomware Infection	4	5	20	Critical
-R03	Insider Data Misuse	3	5	15	High
-R04	Cloud Data Exposure	3	5	15	High
-R05	Unpatched Software Exploitation	4	4	16	High
-R06	DDoS Service Disruption	3	3	9	Moderate
-R07	Hardware Failure and Data Loss	3	4	12	High
-
-Total Identified Risks: 7
-
-Risk Distribution:
-
-* Critical: 2
-* High: 4
-* Moderate: 1
-* Low: 0
-
-⸻
-
-6. Risk Prioritisation
-
-Based on the calculated risk scores, the identified risks are grouped into three treatment priority categories.
-
-6.1 Critical Risks
-
-R01 — Phishing and Account Compromise
-
-R02 — Ransomware Infection
-
-These risks require immediate attention because of their potential to compromise sensitive organisational information, disrupt business operations and cause significant financial or reputational damage.
-
-6.2 High Risks
-
-R03 — Insider Data Misuse
-
-R04 — Cloud Data Exposure
-
-R05 — Exploitation of Unpatched Software
-
-R07 — Hardware Failure and Data Loss
-
-These risks require priority treatment through appropriate access management, cloud security, vulnerability management and business continuity measures.
-
-6.3 Moderate Risks
-
-R06 — DDoS Service Disruption
-
-This risk requires planned security improvements, appropriate network protection and continuous monitoring to maintain service availability.
-
-⸻
-
-7. Assessment Assumptions and Limitations
-
-The likelihood and impact ratings are hypothetical estimates developed for this educational case study.
-
-The assessment does not represent verified measurements of an actual organisation’s cybersecurity posture.
-
-A real-world assessment would require:
-
-* Historical cybersecurity incident records.
-* Technical vulnerability assessments.
-* Interviews with asset owners and relevant departments.
-* Existing security control reviews.
-* Business impact analysis.
-* Validation of identified threats and vulnerabilities.
-* Review of organisational infrastructure and security configurations.
-
-The risk scores may change when additional evidence becomes available or when the organisation’s operating environment changes.
-
-⸻
-
-8. Assessment Conclusion
-
-Seven cybersecurity risks have been evaluated using a qualitative 5×5 risk assessment methodology.
-
-The assessment identified:
-
-* Two Critical risks requiring immediate attention.
-* Four High risks requiring priority treatment.
-* One Moderate risk requiring planned improvement.
-
-Each risk has been associated with an organisational asset, an identified threat and one or more relevant vulnerabilities.
-
-The assessment establishes the foundation for the subsequent risk treatment plan, security control selection and residual risk evaluation.
-
-The initial risk ratings will remain unchanged until proposed security controls have been implemented and their effectiveness has been assessed.
-
-⸻
-
-Project: Cybersecurity Risk Assessment & ISO 27001 Case Study
-Organisation: Nexora Solutions Pvt. Ltd.
-Document: 04 — Cybersecurity Risk Assessment
-Status: Revised Initial Risk Evaluation
-
-Disclaimer: This is a simulated educational assessment. All risk scenarios, likelihood ratings and impact ratings are hypothetical and have not been independently verified.
+| Score | Rating | Description |
+|---|---|---|
+| 1 | Rare | Highly unlikely under normal circumstances |
+| 2 | Unlikely | Could occur but is not expected |
+| 3 | Possible | Could reasonably occur during normal operations |
+| 4 | Likely | Expected to occur under certain circumstances |
+| 5 | Almost certain | Expected to occur frequently |
+
+### 2.2 Impact scale
+
+| Score | Rating | Description |
+|---|---|---|
+| 1 | Insignificant | Negligible financial or operational consequences |
+| 2 | Minor | Limited disruption, small financial consequences |
+| 3 | Moderate | Noticeable disruption or moderate financial consequences |
+| 4 | Major | Serious disruption, significant loss or exposure of sensitive information |
+| 5 | Severe | Critical disruption, major financial loss, substantial data compromise or serious reputational damage |
+
+---
+
+## 3. Risk Rating and Treatment Priority
+
+| Score | Rating | Treatment priority |
+|---|---|---|
+| 1–4 | Low | Routine monitoring |
+| 5–9 | Moderate | Planned improvement |
+| 10–16 | High | Priority treatment |
+| 17–25 | Critical | Immediate attention |
+
+These bands are this project's own criteria. They are not thresholds prescribed by ISO/IEC 27001.
+
+---
+
+## 4. Initial Risk Assessment
+
+**Initial risk** is the risk *before proposed treatment*. No existing control is assumed to be verified (see `10_methodology_and_references.md`). All ratings are estimates for this simulation.
+
+### R01 — Phishing and Account Compromise
+
+| Item | Details |
+|---|---|
+| Affected asset | A05 Corporate Email |
+| Threats | T01 Phishing, T06 Credential theft |
+| Vulnerabilities | V01 Weak authentication, V02 No MFA, V03 Poor email security |
+| Risk owner | IT Manager |
+| Description | An employee interacts with a fraudulent email; attackers steal credentials and, without MFA, gain access to email and connected systems. |
+| Likelihood / Impact | 4 Likely / 5 Severe |
+| **Score / Rating** | **20 — Critical** |
+
+### R02 — Ransomware Infection
+
+| Item | Details |
+|---|---|
+| Affected asset | A01 Client Database |
+| Threat | T02 Ransomware |
+| Vulnerabilities | V04 Unpatched systems, V06 Inadequate backup practices |
+| Risk owner | IT Manager |
+| Description | Ransomware exploits system weaknesses and encrypts critical business information. Weak backups make recovery difficult. |
+| Likelihood / Impact | 4 Likely / 5 Severe |
+| **Score / Rating** | **20 — Critical** |
+
+### R03 — Insider Data Misuse
+
+| Item | Details |
+|---|---|
+| Affected assets | A01 Client Database, A02 Employee Records |
+| Threats | T03 Insider threat, T04 Data breach |
+| Vulnerability | V05 Excessive user permissions |
+| Risk owner | IT Manager (with HR Manager) |
+| Description | An employee with excessive privileges accesses, discloses or modifies client or employee information beyond their job responsibilities. |
+| Likelihood / Impact | 3 Possible / 5 Severe |
+| **Score / Rating** | **15 — High** |
+
+### R04 — Cloud Data Exposure
+
+| Item | Details |
+|---|---|
+| Affected asset | A04 Cloud Storage |
+| Threats | T08 Cloud misconfiguration, T04 Data breach |
+| Vulnerabilities | V08 Cloud security gaps, V02 No MFA |
+| Risk owner | IT Manager |
+| Description | Incorrect cloud permissions or weakly protected cloud accounts expose confidential information to unauthorised people. |
+| Likelihood / Impact | 3 Possible / 5 Severe |
+| **Score / Rating** | **15 — High** |
+
+### R05 — Exploitation of Unpatched Software
+
+| Item | Details |
+|---|---|
+| Affected asset | A07 Employee Laptops |
+| Threat | T09 Exploitation of known software vulnerabilities |
+| Vulnerability | V04 Unpatched systems |
+| Risk owner | IT Manager |
+| Description | Attackers exploit known flaws in outdated operating systems or applications, allowing system access, malware installation or attacks on internal systems. |
+| Likelihood / Impact | 4 Likely / 4 Major |
+| **Score / Rating** | **16 — High** |
+
+### R06 — DDoS Service Disruption
+
+| Item | Details |
+|---|---|
+| Affected assets | A09 Company Website (supported by A08 Network Infrastructure) |
+| Threat | T05 DDoS |
+| Vulnerability | V07 Weak network security |
+| Risk owner | IT Manager |
+| Description | Excessive malicious traffic makes the public website unavailable to customers and visitors. |
+| Likelihood / Impact | 3 Possible / 3 Moderate |
+| **Score / Rating** | **9 — Moderate** |
+
+### R07 — Hardware Failure and Data Loss
+
+| Item | Details |
+|---|---|
+| Affected asset | A10 Backup Systems |
+| Threat | T07 Hardware failure |
+| Vulnerability | V06 Inadequate backup practices |
+| Risk owner | IT Manager |
+| Description | Failure of backup hardware, combined with weak backup and recovery practice, causes permanent data loss or prolonged disruption. |
+| Likelihood / Impact | 3 Possible / 4 Major |
+| **Score / Rating** | **12 — High** |
+
+### R08 — Source Code Compromise
+
+| Item | Details |
+|---|---|
+| Affected asset | A03 Source Code Repository |
+| Threats | T03 Insider threat, T06 Credential theft |
+| Vulnerabilities | V01 Weak authentication, V02 No MFA, V05 Excessive user permissions |
+| Risk owner | Development Manager |
+| Description | Stolen developer credentials or excessive repository permissions allow source code to be copied, altered or deleted, or malicious code to be inserted. |
+| Likelihood / Impact | 3 Possible / 4 Major |
+| **Score / Rating** | **12 — High** |
+
+### R09 — Financial Records Compromise or Tampering
+
+| Item | Details |
+|---|---|
+| Affected asset | A06 Financial Records |
+| Threats | T03 Insider threat, T06 Credential theft |
+| Vulnerabilities | V01 Weak authentication, V02 No MFA, V05 Excessive user permissions |
+| Risk owner | Finance Manager |
+| Description | A compromised or over-privileged finance account leads to disclosure or alteration of invoices and payment records, causing fraud or financial loss. |
+| Likelihood / Impact | 3 Possible / 4 Major |
+| **Score / Rating** | **12 — High** |
+
+---
+
+## 5. Risk Register Summary
+
+| ID | Risk | Asset | Likelihood | Impact | Score | Rating | Owner |
+|---|---|---|---|---|---|---|---|
+| R01 | Phishing and Account Compromise | A05 | 4 | 5 | 20 | Critical | IT Manager |
+| R02 | Ransomware Infection | A01 | 4 | 5 | 20 | Critical | IT Manager |
+| R03 | Insider Data Misuse | A01, A02 | 3 | 5 | 15 | High | IT Manager |
+| R04 | Cloud Data Exposure | A04 | 3 | 5 | 15 | High | IT Manager |
+| R05 | Exploitation of Unpatched Software | A07 | 4 | 4 | 16 | High | IT Manager |
+| R06 | DDoS Service Disruption | A09 | 3 | 3 | 9 | Moderate | IT Manager |
+| R07 | Hardware Failure and Data Loss | A10 | 3 | 4 | 12 | High | IT Manager |
+| R08 | Source Code Compromise | A03 | 3 | 4 | 12 | High | Development Manager |
+| R09 | Financial Records Compromise or Tampering | A06 | 3 | 4 | 12 | High | Finance Manager |
+
+**Distribution:** Critical 2 · High 6 · Moderate 1 · Low 0 · **Total 9**
+
+---
+
+## 6. Risk Heat Map (Initial Risk)
+
+| Likelihood ↓ / Impact → | 1 Insignificant | 2 Minor | 3 Moderate | 4 Major | 5 Severe |
+|---|---|---|---|---|---|
+| **5 Almost certain** | 🟨 5 | 🟧 10 | 🟧 15 | 🟥 20 | 🟥 25 |
+| **4 Likely** | 🟩 4 | 🟨 8 | 🟧 12 | 🟧 16<br>**R05** | 🟥 20<br>**R01, R02** |
+| **3 Possible** | 🟩 3 | 🟨 6 | 🟨 9<br>**R06** | 🟧 12<br>**R07, R08, R09** | 🟧 15<br>**R03, R04** |
+| **2 Unlikely** | 🟩 2 | 🟩 4 | 🟨 6 | 🟨 8 | 🟧 10 |
+| **1 Rare** | 🟩 1 | 🟩 2 | 🟩 3 | 🟩 4 | 🟨 5 |
+
+🟥 Critical · 🟧 High · 🟨 Moderate · 🟩 Low
+
+---
+
+## 7. Risk Prioritisation
+
+**Critical — immediate attention:** R01 Phishing and Account Compromise, R02 Ransomware Infection.
+
+**High — priority treatment (highest score first):** R05, R03, R04, R07, R08, R09.
+
+**Moderate — planned improvement:** R06 DDoS Service Disruption.
+
+---
+
+## 8. Assumptions and Limitations
+
+- Likelihood and impact ratings are hypothetical estimates for this educational case study.
+- They are not measurements of a real organisation's security posture.
+- A real assessment would need incident history, technical vulnerability assessments, interviews with asset owners, reviews of existing controls and business impact analysis.
+- Scores may change as evidence becomes available.
+
+---
+
+## 9. Assessment Conclusion
+
+Nine cybersecurity risks were evaluated: two Critical, six High and one Moderate. Each is linked to an asset, one or more threats and vulnerabilities, and a risk owner.
+
+Initial ratings stay unchanged until proposed controls are implemented and their effectiveness is verified. Treatment is planned in `05_risk_treatment_plan.md`.
+
+---
+
+**Project:** Cybersecurity Risk Assessment & ISO 27001 Case Study
+**Document:** 04 — Cybersecurity Risk Assessment
+**Disclaimer:** This is a simulated educational assessment. All risk scenarios and ratings are hypothetical and not independently verified.
