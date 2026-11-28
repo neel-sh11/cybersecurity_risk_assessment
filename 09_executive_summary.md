@@ -1,261 +1,136 @@
-09 — Executive Summary
+# 09 — Executive Summary
 
-Organisation: Nexora Solutions Pvt. Ltd.
-Project: Cybersecurity Risk Assessment & ISO 27001 Case Study
-Framework: ISO/IEC 27001:2022
-Document Type: Executive Summary
-Version: 2.0
-Assessment Status: Simulated — Proposed Controls Not Implemented
+| Field | Details |
+|---|---|
+| Organisation | Nexora Solutions Pvt. Ltd. (fictional) |
+| Project | Cybersecurity Risk Assessment & ISO 27001 Case Study |
+| Framework | ISO/IEC 27001:2022 |
+| Document | 09 — Executive Summary |
+| Version | 3.0 |
+| Status | Final Portfolio Summary — Simulated Assessment |
 
-⸻
+---
 
-1. Executive Overview
+## 1. Overview
 
-This project presents a simulated cybersecurity risk assessment and Governance, Risk and Compliance (GRC) case study for Nexora Solutions Pvt. Ltd., a fictional organisation.
+This simulated Governance, Risk and Compliance (GRC) case study assesses the information security risks of a fictional 85-person IT services company, Nexora Solutions Pvt. Ltd.
 
-The assessment demonstrates a structured approach to identifying information security risks, evaluating potential business impacts, selecting relevant security controls and establishing a risk treatment and monitoring process.
+It identifies assets, threats and vulnerabilities, rates nine risks, plans treatment, selects ISO/IEC 27001:2022 Annex A controls and sets out how residual risk will be reassessed.
 
-ISO/IEC 27001:2022 serves as the primary reference framework, with supporting guidance from ISO/IEC 27005:2022, ISO/IEC 27002:2022 and NIST Cybersecurity Framework 2.0.
+---
 
-The project follows a risk-based approach to information security management, connecting organisational assets, threats, vulnerabilities, risk evaluation, treatment decisions and control applicability.
+## 2. Headline Findings
 
-2. Assessment Objectives
+- **Nine risks** were assessed: **2 Critical, 6 High, 1 Moderate**.
+- The two Critical risks are **phishing and account compromise (R01)** and **ransomware (R02)**, both scoring 20 out of 25.
+- Weak authentication, missing MFA, patching gaps and untested backups drive most of the exposure.
+- **23 of 93** Annex A controls are selected for treatment. None is implemented or verified, so no risk reduction is claimed.
+- If every proposed control works as planned, the target profile is **8 Moderate and 1 High** (R01).
 
-The primary objectives of this project are to:
+---
 
-1. Establish a simulated organisational security assessment context.
-2. Identify and document important information assets.
-3. Identify potential cybersecurity threats and vulnerabilities.
-4. Evaluate risks using a consistent likelihood and impact methodology.
-5. Establish appropriate risk treatment strategies.
-6. Map selected security controls to identified risks.
-7. Develop a preliminary Statement of Applicability.
-8. Establish a control implementation tracking process.
-9. Define a methodology for future residual risk assessment.
-10. Document assessment assumptions, limitations and supporting references.
+## 3. Risk Register
 
-3. Assessment Scope
+| ID | Risk | Score | Rating | Owner |
+|---|---|---|---|---|
+| R01 | Phishing and Account Compromise | 20 | Critical | IT Manager |
+| R02 | Ransomware Infection | 20 | Critical | IT Manager |
+| R05 | Exploitation of Unpatched Software | 16 | High | IT Manager |
+| R03 | Insider Data Misuse | 15 | High | IT Manager |
+| R04 | Cloud Data Exposure | 15 | High | IT Manager |
+| R07 | Hardware Failure and Data Loss | 12 | High | IT Manager |
+| R08 | Source Code Compromise | 12 | High | Development Manager |
+| R09 | Financial Records Compromise or Tampering | 12 | High | Finance Manager |
+| R06 | DDoS Service Disruption | 9 | Moderate | IT Manager |
 
-The assessment considers the following information security areas:
+Scores use Likelihood × Impact on a 5×5 scale. Bands: 1–4 Low, 5–9 Moderate, 10–16 High, 17–25 Critical.
 
-* Organisational information assets.
-* Client and business information protection.
-* Identity and access management.
-* Email and endpoint security.
-* Malware and ransomware protection.
-* Cloud security configurations.
-* Software vulnerability management.
-* Network security and service availability.
-* Backup, recovery and business continuity.
+---
 
-The assessment is limited to the fictional organisational environment and illustrative scenarios documented in the project.
+## 4. Treatment Strategy
 
-It does not include actual penetration testing, technical vulnerability scanning or independent security verification.
+All nine risks are treated by **mitigation**; cyber insurance (transfer) is noted as an option for ransomware.
 
-4. Key Assessment Findings
+| Phase | Timeframe (indicative) | Focus |
+|---|---|---|
+| 1 | 0–3 months | MFA and credential rules, email and web filtering, malware protection, backups, cloud permissions, privileged access, incident plan |
+| 2 | 3–6 months | Patching, access control and reviews, monitoring, network protection, training, continuity, encryption |
+| 3 | 6–12 months | Capacity, redundancy, periodic testing and reassessment |
 
-The assessment identified seven potential cybersecurity risks.
+---
 
-4.1 Risk Distribution
+## 5. Control Position
 
-Risk Rating	Number of Risks
-Critical	2
-High	4
-Moderate	1
-Low	0
-Total	7
+| Measure | Value |
+|---|---|
+| Annex A controls reviewed in the SoA | 93 |
+| Selected for risk treatment | 23 |
+| Pending full applicability assessment | 55 |
+| Physical controls (out of scope) | 14 |
+| Not applicable | 1 |
+| Implemented or verified | 0 |
 
-4.2 Critical Risks
+---
 
-R01 — Phishing and Account Compromise
+## 6. Planned Outcome (Target, Not Achieved)
 
-Potential compromise of employee accounts through fraudulent emails, malicious links and credential theft.
+| Rating | Initial | Target residual |
+|---|---|---|
+| Critical | 2 | 0 |
+| High | 6 | 1 (R01) |
+| Moderate | 1 | 8 |
+| Low | 0 | 0 |
 
-Initial Risk Score: 20/25.
+R01 stays High because the impact of a compromised account remains severe. It would need further treatment or formal acceptance by senior management.
 
-R02 — Ransomware Infection
+---
 
-Potential encryption of critical organisational information, resulting in data unavailability and business disruption.
+## 7. Decisions Required from Management
 
-Initial Risk Score: 20/25.
+In a real engagement, management would be asked to:
 
-4.3 High Risks
+1. Approve the treatment plan and fund Phase 1.
+2. Confirm risk owners and the proposed Security Officer role.
+3. Approve the risk acceptance criteria.
+4. Decide whether to pursue cyber insurance for ransomware.
+5. Agree to a full applicability assessment of the remaining Annex A controls.
 
-R03 — Insider Data Misuse
+---
 
-Unauthorised access to or misuse of sensitive information through excessive user permissions.
+## 8. Key Recommendations
 
-Initial Risk Score: 15/25.
+1. Treat the Critical risks (phishing and ransomware) first.
+2. Enforce MFA on email, cloud, repository and finance systems.
+3. Establish tested, isolated backups.
+4. Create a formal patch and vulnerability management process.
+5. Review cloud and privileged access, and restrict source code and finance access by role.
+6. Run security awareness training with phishing simulations.
+7. Prepare and test an incident response plan.
+8. Complete the assessment of the pending Annex A controls, including physical security.
+9. Review risks and control effectiveness regularly.
 
-R04 — Cloud Data Exposure
+---
 
-Potential exposure of organisational information due to insecure cloud configurations and access permissions.
+## 9. Limitations
 
-Initial Risk Score: 15/25.
+This is an educational portfolio project. It does not represent:
 
-R05 — Exploitation of Unpatched Software
+- A real security audit, penetration test or vulnerability assessment
+- An independently verified compliance assessment
+- An implemented Information Security Management System
+- ISO/IEC 27001 certification
+- Verified control effectiveness or residual risk reduction
 
-Potential exploitation of known vulnerabilities in outdated operating systems and applications.
+All organisational details, risk scenarios and ratings are illustrative.
 
-Initial Risk Score: 16/25.
+---
 
-R07 — Hardware Failure and Data Loss
+## 10. Conclusion
 
-Potential loss of information or operational disruption due to hardware failure and inadequate recovery arrangements.
+The project shows the core GRC workflow: context, assets, threats, risk rating, treatment, control selection, implementation tracking and residual risk planning, with each risk traceable to assets, threats, vulnerabilities and controls. It deliberately separates proposed improvements from verified implementation.
 
-Initial Risk Score: 12/25.
+---
 
-4.4 Moderate Risk
-
-R06 — DDoS Service Disruption
-
-Potential unavailability of the company’s public website due to excessive malicious network traffic.
-
-Initial Risk Score: 9/25.
-
-5. Risk Assessment Methodology
-
-The project uses a qualitative 5×5 risk assessment matrix.
-
-Risk scores are calculated using:
-
-Risk Score = Likelihood × Impact
-
-Both likelihood and impact are assigned values between 1 and 5.
-
-The resulting risk scores are classified as:
-
-* 1–4: Low.
-* 5–9: Moderate.
-* 10–16: High.
-* 17–25: Critical.
-
-This methodology provides a consistent approach to evaluating and prioritising the identified cybersecurity risks.
-
-6. Risk Treatment Strategy
-
-All seven identified risks have been assigned a mitigation strategy.
-
-The proposed treatment activities focus on:
-
-* Improving employee security awareness.
-* Strengthening authentication and access controls.
-* Improving malware and ransomware protection.
-* Establishing formal vulnerability and patch management.
-* Strengthening cloud security configurations.
-* Improving network protection and monitoring.
-* Establishing reliable backup and recovery arrangements.
-* Improving ICT readiness for business continuity.
-
-The proposed treatments are documented in the Risk Treatment Plan.
-
-No proposed treatment should be interpreted as proof of actual control implementation.
-
-## 7. Statement of Applicability
-
-The preliminary Statement of Applicability identifies 22 selected ISO/IEC 27001:2022 Annex A controls.
-
-The selected controls are distributed as follows:
-
-| Control Category | Selected Controls |
-|---|---:|
-| Organisational (A.5) | 6 |
-| People (A.6) | 1 |
-| Physical (A.7) | Not Assessed |
-| Technological (A.8) | 15 |
-| **Total Selected** | **22** |
-
-The preliminary SoA is a risk-based selection and not a complete assessment of all 93 Annex A controls.
-
-Physical controls have not been assessed in this case study. Additional applicability and exclusion assessments would be required for a complete SoA.
-
-## 8. Control Implementation Status
-
-A preliminary implementation tracker has been developed for the 22 selected controls.
-
-Current Implementation Baseline:
-
-| Implementation Status | Controls |
-|---|---:|
-| Proposed — Not Verified | 22 |
-| In Progress | 0 |
-| Implemented — Pending Verification | 0 |
-| Partially Implemented | 0 |
-| Verified | 0 |
-| **Total** | **22** |
-
-**Initial Implementation Progress: 0%**
-
-The tracker defines proposed responsibilities, implementation priorities, activities and evidence requirements.
-
-These are planning assumptions for the simulated case study, not verified organisational activities.
-
-9. Residual Risk Assessment
-
-A residual risk assessment framework has been established for all seven identified risks.
-
-However, residual risk scores remain pending because the proposed controls have not been implemented or independently verified.
-
-Residual risk evaluation will require:
-
-* Evidence of control implementation.
-* Review of control effectiveness.
-* Updated likelihood and impact assessments.
-* Documentation of remaining risk exposure.
-* Appropriate risk owner and management review.
-* Formal approval of accepted residual risks.
-
-No reduction in the initial risk scores is currently claimed.
-
-10. Key Recommendations
-
-Based on the preliminary assessment, the following activities are recommended:
-
-1. Prioritise treatment of Critical risks involving phishing and ransomware.
-2. Strengthen authentication and privileged access management.
-3. Establish a formal vulnerability and patch management process.
-4. Improve cloud security configuration and access reviews.
-5. Maintain reliable and tested backup arrangements.
-6. Improve security awareness and employee training.
-7. Establish appropriate network monitoring and protection.
-8. Develop business continuity and incident response procedures.
-9. Complete the applicability assessment of all 93 Annex A controls.
-10. Conduct periodic risk and control effectiveness reviews.
-
-11. Project Limitations
-
-This project is a simulated educational GRC case study created for learning and professional portfolio purposes.
-
-The fictional organisation, its information assets, threats, vulnerabilities and risk scenarios are illustrative.
-
-The project does not represent:
-
-* An actual organisational security audit.
-* A penetration test or vulnerability assessment.
-* An independently verified compliance assessment.
-* An implemented Information Security Management System.
-* ISO/IEC 27001 certification.
-* Verified control effectiveness or residual risk reduction.
-
-The selected controls and implementation plans represent proposed improvements only.
-
-12. Conclusion
-
-This project demonstrates a structured approach to cybersecurity risk management using ISO/IEC 27001:2022 as its primary reference framework.
-
-It connects organisational assets with potential threats and vulnerabilities, evaluates seven cybersecurity risks, defines treatment strategies and maps selected security controls to identified risks.
-
-The project also establishes preliminary processes for control implementation tracking, evidence management and residual risk evaluation.
-
-The assessment highlights the importance of maintaining traceability between risks, treatments and security controls while distinguishing proposed improvements from verified implementation.
-
-Overall, the case study demonstrates the fundamental GRC activities required to support a risk-based information security management approach.
-
-⸻
-
-Project: Cybersecurity Risk Assessment & ISO 27001 Case Study
-Organisation: Nexora Solutions Pvt. Ltd.
-Document: 09 — Executive Summary
-Status: Final Portfolio Summary — Simulated Assessment
-
-Disclaimer: This is a hypothetical educational project. All organisational details, risk scenarios and proposed security improvements are illustrative and have not been independently verified.
+**Project:** Cybersecurity Risk Assessment & ISO 27001 Case Study
+**Document:** 09 — Executive Summary
+**Disclaimer:** This is a hypothetical educational project. All details are illustrative and not independently verified.
